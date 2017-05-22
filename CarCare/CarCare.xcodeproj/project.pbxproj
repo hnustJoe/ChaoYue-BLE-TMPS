@@ -1,0 +1,1581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8034E8F1E860532000A817F /* AotuSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8034E8E1E860532000A817F /* AotuSearchView.m */; };
+		D814EF2C1E6FD5C500FB8DC8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D814EF2B1E6FD5C500FB8DC8 /* ImageIO.framework */; };
+		D814EF391E6FF7A900FB8DC8 /* MIBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF381E6FF7A900FB8DC8 /* MIBadgeButton.m */; };
+		D814EF3C1E6FF89200FB8DC8 /* MIBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF3B1E6FF89200FB8DC8 /* MIBadgeLabel.m */; };
+		D814EF5C1E73A74200FB8DC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D814EF421E73A74200FB8DC8 /* Info.plist */; };
+		D814EF5D1E73A74200FB8DC8 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF441E73A74200FB8DC8 /* MASCompositeConstraint.m */; };
+		D814EF5E1E73A74200FB8DC8 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF471E73A74200FB8DC8 /* MASConstraint.m */; };
+		D814EF5F1E73A74200FB8DC8 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF491E73A74200FB8DC8 /* MASConstraintMaker.m */; };
+		D814EF601E73A74200FB8DC8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF4B1E73A74200FB8DC8 /* MASLayoutConstraint.m */; };
+		D814EF611E73A74200FB8DC8 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF4F1E73A74200FB8DC8 /* MASViewAttribute.m */; };
+		D814EF621E73A74200FB8DC8 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF511E73A74200FB8DC8 /* MASViewConstraint.m */; };
+		D814EF631E73A74200FB8DC8 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF531E73A74200FB8DC8 /* NSArray+MASAdditions.m */; };
+		D814EF641E73A74200FB8DC8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF561E73A74200FB8DC8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		D814EF651E73A74200FB8DC8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF581E73A74200FB8DC8 /* View+MASAdditions.m */; };
+		D814EF661E73A74200FB8DC8 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D814EF5B1E73A74200FB8DC8 /* ViewController+MASAdditions.m */; };
+		D81B20631E8BE5D400259550 /* Pods_CarCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B450ADD9F5AD594FDEEFD0 /* Pods_CarCare.framework */; };
+		D81B20681E8CAF1200259550 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B20671E8CAF1200259550 /* QuartzCore.framework */; };
+		D81B206A1E8CAF2100259550 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B20691E8CAF2100259550 /* MobileCoreServices.framework */; };
+		D81B206C1E8CAF2900259550 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81B206B1E8CAF2900259550 /* CoreGraphics.framework */; };
+		D81B20741E8CD1D900259550 /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B20731E8CD1D900259550 /* AnimatedGIFImageSerialization.m */; };
+		D81F277E1E7A3C6500075891 /* SystemSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81F277C1E7A3C6500075891 /* SystemSettingViewController.m */; };
+		D81F277F1E7A3C6500075891 /* SystemSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81F277D1E7A3C6500075891 /* SystemSettingViewController.xib */; };
+		D82675C91EC0476500DA7DCC /* 右前轮胎气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B11EC0476500DA7DCC /* 右前轮胎气压过低EN.wav */; };
+		D82675CA1EC0476500DA7DCC /* 右前轮胎气压过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B21EC0476500DA7DCC /* 右前轮胎气压过高EN.wav */; };
+		D82675CB1EC0476500DA7DCC /* 右前轮胎温度过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B31EC0476500DA7DCC /* 右前轮胎温度过高EN.wav */; };
+		D82675CC1EC0476500DA7DCC /* 右前轮胎漏气 气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B41EC0476500DA7DCC /* 右前轮胎漏气 气压过低EN.wav */; };
+		D82675CD1EC0476500DA7DCC /* 右前轮胎漏气EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B51EC0476500DA7DCC /* 右前轮胎漏气EN.wav */; };
+		D82675CE1EC0476500DA7DCC /* 右前轮胎电量过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B61EC0476500DA7DCC /* 右前轮胎电量过低EN.wav */; };
+		D82675CF1EC0476500DA7DCC /* 右后轮胎气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B71EC0476500DA7DCC /* 右后轮胎气压过低EN.wav */; };
+		D82675D01EC0476500DA7DCC /* 右后轮胎气压过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B81EC0476500DA7DCC /* 右后轮胎气压过高EN.wav */; };
+		D82675D11EC0476500DA7DCC /* 右后轮胎温度过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675B91EC0476500DA7DCC /* 右后轮胎温度过高EN.wav */; };
+		D82675D21EC0476500DA7DCC /* 右后轮胎漏气 气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675BA1EC0476500DA7DCC /* 右后轮胎漏气 气压过低EN.wav */; };
+		D82675D31EC0476500DA7DCC /* 右后轮胎漏气EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675BB1EC0476500DA7DCC /* 右后轮胎漏气EN.wav */; };
+		D82675D41EC0476500DA7DCC /* 右后轮胎电量过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675BC1EC0476500DA7DCC /* 右后轮胎电量过低EN.wav */; };
+		D82675D51EC0476500DA7DCC /* 左前轮胎气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675BD1EC0476500DA7DCC /* 左前轮胎气压过低EN.wav */; };
+		D82675D61EC0476500DA7DCC /* 左前轮胎气压过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675BE1EC0476500DA7DCC /* 左前轮胎气压过高EN.wav */; };
+		D82675D71EC0476500DA7DCC /* 左前轮胎温度过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675BF1EC0476500DA7DCC /* 左前轮胎温度过高EN.wav */; };
+		D82675D81EC0476500DA7DCC /* 左前轮胎漏气 气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C01EC0476500DA7DCC /* 左前轮胎漏气 气压过低EN.wav */; };
+		D82675D91EC0476500DA7DCC /* 左前轮胎漏气EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C11EC0476500DA7DCC /* 左前轮胎漏气EN.wav */; };
+		D82675DA1EC0476500DA7DCC /* 左前轮胎电量过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C21EC0476500DA7DCC /* 左前轮胎电量过低EN.wav */; };
+		D82675DB1EC0476500DA7DCC /* 左后轮胎气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C31EC0476500DA7DCC /* 左后轮胎气压过低EN.wav */; };
+		D82675DC1EC0476500DA7DCC /* 左后轮胎气压过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C41EC0476500DA7DCC /* 左后轮胎气压过高EN.wav */; };
+		D82675DD1EC0476500DA7DCC /* 左后轮胎温度过高EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C51EC0476500DA7DCC /* 左后轮胎温度过高EN.wav */; };
+		D82675DE1EC0476500DA7DCC /* 左后轮胎漏气 气压过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C61EC0476500DA7DCC /* 左后轮胎漏气 气压过低EN.wav */; };
+		D82675DF1EC0476500DA7DCC /* 左后轮胎漏气EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C71EC0476500DA7DCC /* 左后轮胎漏气EN.wav */; };
+		D82675E01EC0476500DA7DCC /* 左后轮胎电量过低EN.wav in Resources */ = {isa = PBXBuildFile; fileRef = D82675C81EC0476500DA7DCC /* 左后轮胎电量过低EN.wav */; };
+		D82675FA1EC04E3F00DA7DCC /* 右前轮胎气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E21EC04E3F00DA7DCC /* 右前轮胎气压过低.caf */; };
+		D82675FB1EC04E3F00DA7DCC /* 右前轮胎气压过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E31EC04E3F00DA7DCC /* 右前轮胎气压过高.caf */; };
+		D82675FC1EC04E3F00DA7DCC /* 右前轮胎温度过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E41EC04E3F00DA7DCC /* 右前轮胎温度过高.caf */; };
+		D82675FD1EC04E3F00DA7DCC /* 右前轮胎漏气 气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E51EC04E3F00DA7DCC /* 右前轮胎漏气 气压过低.caf */; };
+		D82675FE1EC04E3F00DA7DCC /* 右前轮胎漏气.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E61EC04E3F00DA7DCC /* 右前轮胎漏气.caf */; };
+		D82675FF1EC04E3F00DA7DCC /* 右前轮胎电量过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E71EC04E3F00DA7DCC /* 右前轮胎电量过低.caf */; };
+		D82676001EC04E3F00DA7DCC /* 右后轮胎气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E81EC04E3F00DA7DCC /* 右后轮胎气压过低.caf */; };
+		D82676011EC04E3F00DA7DCC /* 右后轮胎气压过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675E91EC04E3F00DA7DCC /* 右后轮胎气压过高.caf */; };
+		D82676021EC04E3F00DA7DCC /* 右后轮胎温度过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675EA1EC04E3F00DA7DCC /* 右后轮胎温度过高.caf */; };
+		D82676031EC04E3F00DA7DCC /* 右后轮胎漏气 气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675EB1EC04E3F00DA7DCC /* 右后轮胎漏气 气压过低.caf */; };
+		D82676041EC04E3F00DA7DCC /* 右后轮胎漏气.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675EC1EC04E3F00DA7DCC /* 右后轮胎漏气.caf */; };
+		D82676051EC04E3F00DA7DCC /* 右后轮胎电量过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675ED1EC04E3F00DA7DCC /* 右后轮胎电量过低.caf */; };
+		D82676061EC04E3F00DA7DCC /* 左前轮胎气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675EE1EC04E3F00DA7DCC /* 左前轮胎气压过低.caf */; };
+		D82676071EC04E3F00DA7DCC /* 左前轮胎气压过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675EF1EC04E3F00DA7DCC /* 左前轮胎气压过高.caf */; };
+		D82676081EC04E3F00DA7DCC /* 左前轮胎温度过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F01EC04E3F00DA7DCC /* 左前轮胎温度过高.caf */; };
+		D82676091EC04E3F00DA7DCC /* 左前轮胎漏气 气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F11EC04E3F00DA7DCC /* 左前轮胎漏气 气压过低.caf */; };
+		D826760A1EC04E3F00DA7DCC /* 左前轮胎漏气.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F21EC04E3F00DA7DCC /* 左前轮胎漏气.caf */; };
+		D826760B1EC04E3F00DA7DCC /* 左前轮胎电量过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F31EC04E3F00DA7DCC /* 左前轮胎电量过低.caf */; };
+		D826760C1EC04E3F00DA7DCC /* 左后轮胎气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F41EC04E3F00DA7DCC /* 左后轮胎气压过低.caf */; };
+		D826760D1EC04E3F00DA7DCC /* 左后轮胎气压过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F51EC04E3F00DA7DCC /* 左后轮胎气压过高.caf */; };
+		D826760E1EC04E3F00DA7DCC /* 左后轮胎温度过高.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F61EC04E3F00DA7DCC /* 左后轮胎温度过高.caf */; };
+		D826760F1EC04E3F00DA7DCC /* 左后轮胎漏气 气压过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F71EC04E3F00DA7DCC /* 左后轮胎漏气 气压过低.caf */; };
+		D82676101EC04E3F00DA7DCC /* 左后轮胎漏气.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F81EC04E3F00DA7DCC /* 左后轮胎漏气.caf */; };
+		D82676111EC04E3F00DA7DCC /* 左后轮胎电量过低.caf in Resources */ = {isa = PBXBuildFile; fileRef = D82675F91EC04E3F00DA7DCC /* 左后轮胎电量过低.caf */; };
+		D826761B1EC053BF00DA7DCC /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82676191EC053BF00DA7DCC /* HelpViewController.m */; };
+		D826761C1EC053BF00DA7DCC /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D826761A1EC053BF00DA7DCC /* HelpViewController.xib */; };
+		D82676201EC0563600DA7DCC /* APPUseDesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D826761E1EC0563600DA7DCC /* APPUseDesViewController.m */; };
+		D88F10C11E6FCC5C00CDF34D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F10C01E6FCC5C00CDF34D /* main.m */; };
+		D88F10C41E6FCC5C00CDF34D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F10C31E6FCC5C00CDF34D /* AppDelegate.m */; };
+		D88F10C71E6FCC5C00CDF34D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F10C61E6FCC5C00CDF34D /* ViewController.m */; };
+		D88F10CA1E6FCC5C00CDF34D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88F10C81E6FCC5C00CDF34D /* Main.storyboard */; };
+		D88F10CC1E6FCC5C00CDF34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88F10CB1E6FCC5C00CDF34D /* Assets.xcassets */; };
+		D88F10DA1E6FCC5C00CDF34D /* CarCareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F10D91E6FCC5C00CDF34D /* CarCareTests.m */; };
+		D88F10E51E6FCC5C00CDF34D /* CarCareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F10E41E6FCC5C00CDF34D /* CarCareUITests.m */; };
+		D8B573511EBC1C2900BA4DA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8B573531EBC1C2900BA4DA2 /* Localizable.strings */; };
+		D8B81F4F1E75087F00E43F31 /* BindNewDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B81F4D1E75087F00E43F31 /* BindNewDeviceViewController.m */; };
+		D8B81F501E75087F00E43F31 /* BindNewDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B81F4E1E75087F00E43F31 /* BindNewDeviceViewController.xib */; };
+		D8BB8C3E1E83BF4F0087EE69 /* MainBindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BB8C3C1E83BF4F0087EE69 /* MainBindViewController.m */; };
+		D8BB8C3F1E83BF4F0087EE69 /* MainBindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8BB8C3D1E83BF4F0087EE69 /* MainBindViewController.xib */; };
+		D8BB8C431E83BF600087EE69 /* AutoBindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BB8C411E83BF600087EE69 /* AutoBindViewController.m */; };
+		D8BB8C441E83BF600087EE69 /* AutoBindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8BB8C421E83BF600087EE69 /* AutoBindViewController.xib */; };
+		D8BB8C471E83CE570087EE69 /* SystemInstallDesController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BB8C461E83CE570087EE69 /* SystemInstallDesController.m */; };
+		D8C0F1631E8BDBD7003A3736 /* blue.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8C0F1611E8BDBD7003A3736 /* blue.gif */; };
+		D8C0F1641E8BDBD7003A3736 /* orange.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8C0F1621E8BDBD7003A3736 /* orange.gif */; };
+		D8E71BA81E767AD800D3300E /* BindDeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BA71E767AD800D3300E /* BindDeviceView.m */; };
+		D8E71BCE1E7693A200D3300E /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BAD1E7693A200D3300E /* IQNSArray+Sort.m */; };
+		D8E71BCF1E7693A200D3300E /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BAF1E7693A200D3300E /* IQUIScrollView+Additions.m */; };
+		D8E71BD01E7693A200D3300E /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BB11E7693A200D3300E /* IQUITextFieldView+Additions.m */; };
+		D8E71BD11E7693A200D3300E /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BB31E7693A200D3300E /* IQUIView+Hierarchy.m */; };
+		D8E71BD21E7693A200D3300E /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BB51E7693A200D3300E /* IQUIViewController+Additions.m */; };
+		D8E71BD31E7693A200D3300E /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BB71E7693A200D3300E /* IQUIWindow+Hierarchy.m */; };
+		D8E71BD41E7693A200D3300E /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BBC1E7693A200D3300E /* IQKeyboardManager.m */; };
+		D8E71BD51E7693A200D3300E /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BBE1E7693A200D3300E /* IQKeyboardReturnKeyHandler.m */; };
+		D8E71BD61E7693A200D3300E /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BC11E7693A200D3300E /* IQTextView.m */; };
+		D8E71BD71E7693A200D3300E /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BC41E7693A200D3300E /* IQBarButtonItem.m */; };
+		D8E71BD81E7693A200D3300E /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BC61E7693A200D3300E /* IQTitleBarButtonItem.m */; };
+		D8E71BD91E7693A200D3300E /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BC81E7693A200D3300E /* IQToolbar.m */; };
+		D8E71BDA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BCA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m */; };
+		D8E71BDB1E7693A200D3300E /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8E71BCD1E7693A200D3300E /* IQKeyboardManager.bundle */; };
+		D8E71BDE1E76983D00D3300E /* CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BDD1E76983D00D3300E /* CommonFunction.m */; };
+		D8EC86D01E950DE600402C8A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EC86CF1E950DE600402C8A /* Launch Screen.storyboard */; };
+		D8EC86D31E9511F200402C8A /* APPUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EC86D21E9511F200402C8A /* APPUpdateManager.m */; };
+		D8EC87921E9C6F4F00402C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC87911E9C6F4F00402C8A /* AppDelegate.swift */; };
+		D8EC87941E9C6F4F00402C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC87931E9C6F4F00402C8A /* ViewController.swift */; };
+		D8EC87971E9C6F4F00402C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EC87951E9C6F4F00402C8A /* Main.storyboard */; };
+		D8EC87991E9C6F4F00402C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EC87981E9C6F4F00402C8A /* Assets.xcassets */; };
+		D8EC879C1E9C6F4F00402C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EC879A1E9C6F4F00402C8A /* LaunchScreen.storyboard */; };
+		D8EC87A71E9C6F4F00402C8A /* swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC87A61E9C6F4F00402C8A /* swiftTests.swift */; };
+		D8EC87B21E9C6F4F00402C8A /* swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC87B11E9C6F4F00402C8A /* swiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D88F10D61E6FCC5C00CDF34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88F10B41E6FCC5C00CDF34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D88F10BB1E6FCC5C00CDF34D;
+			remoteInfo = CarCare;
+		};
+		D88F10E11E6FCC5C00CDF34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88F10B41E6FCC5C00CDF34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D88F10BB1E6FCC5C00CDF34D;
+			remoteInfo = CarCare;
+		};
+		D8EC87A31E9C6F4F00402C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88F10B41E6FCC5C00CDF34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EC878E1E9C6F4F00402C8A;
+			remoteInfo = swift;
+		};
+		D8EC87AE1E9C6F4F00402C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88F10B41E6FCC5C00CDF34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EC878E1E9C6F4F00402C8A;
+			remoteInfo = swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05B450ADD9F5AD594FDEEFD0 /* Pods_CarCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE0AC0599B74234FCDBEB03 /* Pods-CarCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarCare/Pods-CarCare.release.xcconfig"; sourceTree = "<group>"; };
+		9F143AD4C185137B11DC99F3 /* Pods-CarCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarCare/Pods-CarCare.debug.xcconfig"; sourceTree = "<group>"; };
+		D8034E8D1E860532000A817F /* AotuSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AotuSearchView.h; sourceTree = "<group>"; };
+		D8034E8E1E860532000A817F /* AotuSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AotuSearchView.m; sourceTree = "<group>"; };
+		D814EF2B1E6FD5C500FB8DC8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D814EF371E6FF7A900FB8DC8 /* MIBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIBadgeButton.h; sourceTree = "<group>"; };
+		D814EF381E6FF7A900FB8DC8 /* MIBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIBadgeButton.m; sourceTree = "<group>"; };
+		D814EF3A1E6FF89200FB8DC8 /* MIBadgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIBadgeLabel.h; sourceTree = "<group>"; };
+		D814EF3B1E6FF89200FB8DC8 /* MIBadgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIBadgeLabel.m; sourceTree = "<group>"; };
+		D814EF421E73A74200FB8DC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D814EF431E73A74200FB8DC8 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		D814EF441E73A74200FB8DC8 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		D814EF451E73A74200FB8DC8 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		D814EF461E73A74200FB8DC8 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		D814EF471E73A74200FB8DC8 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		D814EF481E73A74200FB8DC8 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		D814EF491E73A74200FB8DC8 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		D814EF4A1E73A74200FB8DC8 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		D814EF4B1E73A74200FB8DC8 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		D814EF4C1E73A74200FB8DC8 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		D814EF4D1E73A74200FB8DC8 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		D814EF4E1E73A74200FB8DC8 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		D814EF4F1E73A74200FB8DC8 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		D814EF501E73A74200FB8DC8 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		D814EF511E73A74200FB8DC8 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		D814EF521E73A74200FB8DC8 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		D814EF531E73A74200FB8DC8 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		D814EF541E73A74200FB8DC8 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		D814EF551E73A74200FB8DC8 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		D814EF561E73A74200FB8DC8 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		D814EF571E73A74200FB8DC8 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		D814EF581E73A74200FB8DC8 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		D814EF591E73A74200FB8DC8 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		D814EF5A1E73A74200FB8DC8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		D814EF5B1E73A74200FB8DC8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		D81B20671E8CAF1200259550 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D81B20691E8CAF2100259550 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D81B206B1E8CAF2900259550 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D81B206E1E8CB06200259550 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = CarCare/FLAnimatedImage/FLAnimatedImage.framework; sourceTree = "<group>"; };
+		D81B20721E8CD1D900259550 /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
+		D81B20731E8CD1D900259550 /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
+		D81F277B1E7A3C6500075891 /* SystemSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemSettingViewController.h; sourceTree = "<group>"; };
+		D81F277C1E7A3C6500075891 /* SystemSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemSettingViewController.m; sourceTree = "<group>"; };
+		D81F277D1E7A3C6500075891 /* SystemSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SystemSettingViewController.xib; sourceTree = "<group>"; };
+		D82675B11EC0476500DA7DCC /* 右前轮胎气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右前轮胎气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675B21EC0476500DA7DCC /* 右前轮胎气压过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右前轮胎气压过高EN.wav"; sourceTree = "<group>"; };
+		D82675B31EC0476500DA7DCC /* 右前轮胎温度过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右前轮胎温度过高EN.wav"; sourceTree = "<group>"; };
+		D82675B41EC0476500DA7DCC /* 右前轮胎漏气 气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右前轮胎漏气 气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675B51EC0476500DA7DCC /* 右前轮胎漏气EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右前轮胎漏气EN.wav"; sourceTree = "<group>"; };
+		D82675B61EC0476500DA7DCC /* 右前轮胎电量过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右前轮胎电量过低EN.wav"; sourceTree = "<group>"; };
+		D82675B71EC0476500DA7DCC /* 右后轮胎气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右后轮胎气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675B81EC0476500DA7DCC /* 右后轮胎气压过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右后轮胎气压过高EN.wav"; sourceTree = "<group>"; };
+		D82675B91EC0476500DA7DCC /* 右后轮胎温度过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右后轮胎温度过高EN.wav"; sourceTree = "<group>"; };
+		D82675BA1EC0476500DA7DCC /* 右后轮胎漏气 气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右后轮胎漏气 气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675BB1EC0476500DA7DCC /* 右后轮胎漏气EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右后轮胎漏气EN.wav"; sourceTree = "<group>"; };
+		D82675BC1EC0476500DA7DCC /* 右后轮胎电量过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "右后轮胎电量过低EN.wav"; sourceTree = "<group>"; };
+		D82675BD1EC0476500DA7DCC /* 左前轮胎气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左前轮胎气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675BE1EC0476500DA7DCC /* 左前轮胎气压过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左前轮胎气压过高EN.wav"; sourceTree = "<group>"; };
+		D82675BF1EC0476500DA7DCC /* 左前轮胎温度过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左前轮胎温度过高EN.wav"; sourceTree = "<group>"; };
+		D82675C01EC0476500DA7DCC /* 左前轮胎漏气 气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左前轮胎漏气 气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675C11EC0476500DA7DCC /* 左前轮胎漏气EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左前轮胎漏气EN.wav"; sourceTree = "<group>"; };
+		D82675C21EC0476500DA7DCC /* 左前轮胎电量过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左前轮胎电量过低EN.wav"; sourceTree = "<group>"; };
+		D82675C31EC0476500DA7DCC /* 左后轮胎气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左后轮胎气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675C41EC0476500DA7DCC /* 左后轮胎气压过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左后轮胎气压过高EN.wav"; sourceTree = "<group>"; };
+		D82675C51EC0476500DA7DCC /* 左后轮胎温度过高EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左后轮胎温度过高EN.wav"; sourceTree = "<group>"; };
+		D82675C61EC0476500DA7DCC /* 左后轮胎漏气 气压过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左后轮胎漏气 气压过低EN.wav"; sourceTree = "<group>"; };
+		D82675C71EC0476500DA7DCC /* 左后轮胎漏气EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左后轮胎漏气EN.wav"; sourceTree = "<group>"; };
+		D82675C81EC0476500DA7DCC /* 左后轮胎电量过低EN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "左后轮胎电量过低EN.wav"; sourceTree = "<group>"; };
+		D82675E21EC04E3F00DA7DCC /* 右前轮胎气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右前轮胎气压过低.caf"; sourceTree = "<group>"; };
+		D82675E31EC04E3F00DA7DCC /* 右前轮胎气压过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右前轮胎气压过高.caf"; sourceTree = "<group>"; };
+		D82675E41EC04E3F00DA7DCC /* 右前轮胎温度过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右前轮胎温度过高.caf"; sourceTree = "<group>"; };
+		D82675E51EC04E3F00DA7DCC /* 右前轮胎漏气 气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右前轮胎漏气 气压过低.caf"; sourceTree = "<group>"; };
+		D82675E61EC04E3F00DA7DCC /* 右前轮胎漏气.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右前轮胎漏气.caf"; sourceTree = "<group>"; };
+		D82675E71EC04E3F00DA7DCC /* 右前轮胎电量过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右前轮胎电量过低.caf"; sourceTree = "<group>"; };
+		D82675E81EC04E3F00DA7DCC /* 右后轮胎气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右后轮胎气压过低.caf"; sourceTree = "<group>"; };
+		D82675E91EC04E3F00DA7DCC /* 右后轮胎气压过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右后轮胎气压过高.caf"; sourceTree = "<group>"; };
+		D82675EA1EC04E3F00DA7DCC /* 右后轮胎温度过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右后轮胎温度过高.caf"; sourceTree = "<group>"; };
+		D82675EB1EC04E3F00DA7DCC /* 右后轮胎漏气 气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右后轮胎漏气 气压过低.caf"; sourceTree = "<group>"; };
+		D82675EC1EC04E3F00DA7DCC /* 右后轮胎漏气.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右后轮胎漏气.caf"; sourceTree = "<group>"; };
+		D82675ED1EC04E3F00DA7DCC /* 右后轮胎电量过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "右后轮胎电量过低.caf"; sourceTree = "<group>"; };
+		D82675EE1EC04E3F00DA7DCC /* 左前轮胎气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左前轮胎气压过低.caf"; sourceTree = "<group>"; };
+		D82675EF1EC04E3F00DA7DCC /* 左前轮胎气压过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左前轮胎气压过高.caf"; sourceTree = "<group>"; };
+		D82675F01EC04E3F00DA7DCC /* 左前轮胎温度过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左前轮胎温度过高.caf"; sourceTree = "<group>"; };
+		D82675F11EC04E3F00DA7DCC /* 左前轮胎漏气 气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左前轮胎漏气 气压过低.caf"; sourceTree = "<group>"; };
+		D82675F21EC04E3F00DA7DCC /* 左前轮胎漏气.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左前轮胎漏气.caf"; sourceTree = "<group>"; };
+		D82675F31EC04E3F00DA7DCC /* 左前轮胎电量过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左前轮胎电量过低.caf"; sourceTree = "<group>"; };
+		D82675F41EC04E3F00DA7DCC /* 左后轮胎气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左后轮胎气压过低.caf"; sourceTree = "<group>"; };
+		D82675F51EC04E3F00DA7DCC /* 左后轮胎气压过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左后轮胎气压过高.caf"; sourceTree = "<group>"; };
+		D82675F61EC04E3F00DA7DCC /* 左后轮胎温度过高.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左后轮胎温度过高.caf"; sourceTree = "<group>"; };
+		D82675F71EC04E3F00DA7DCC /* 左后轮胎漏气 气压过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左后轮胎漏气 气压过低.caf"; sourceTree = "<group>"; };
+		D82675F81EC04E3F00DA7DCC /* 左后轮胎漏气.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左后轮胎漏气.caf"; sourceTree = "<group>"; };
+		D82675F91EC04E3F00DA7DCC /* 左后轮胎电量过低.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "左后轮胎电量过低.caf"; sourceTree = "<group>"; };
+		D82676181EC053BF00DA7DCC /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		D82676191EC053BF00DA7DCC /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		D826761A1EC053BF00DA7DCC /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		D826761D1EC0563600DA7DCC /* APPUseDesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPUseDesViewController.h; sourceTree = "<group>"; };
+		D826761E1EC0563600DA7DCC /* APPUseDesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPUseDesViewController.m; sourceTree = "<group>"; };
+		D88F10BC1E6FCC5C00CDF34D /* CarCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88F10C01E6FCC5C00CDF34D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D88F10C21E6FCC5C00CDF34D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D88F10C31E6FCC5C00CDF34D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D88F10C51E6FCC5C00CDF34D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D88F10C61E6FCC5C00CDF34D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D88F10C91E6FCC5C00CDF34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D88F10CB1E6FCC5C00CDF34D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D88F10D01E6FCC5C00CDF34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88F10D51E6FCC5C00CDF34D /* CarCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88F10D91E6FCC5C00CDF34D /* CarCareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarCareTests.m; sourceTree = "<group>"; };
+		D88F10DB1E6FCC5C00CDF34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88F10E01E6FCC5C00CDF34D /* CarCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88F10E41E6FCC5C00CDF34D /* CarCareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarCareUITests.m; sourceTree = "<group>"; };
+		D88F10E61E6FCC5C00CDF34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B5734E1EBC1C1A00BA4DA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D8B5734F1EBC1C1A00BA4DA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D8B573501EBC1C1A00BA4DA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D8B573521EBC1C2900BA4DA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D8B573541EBC1C2D00BA4DA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8B573551EBC1C3000BA4DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8B81F4C1E75087F00E43F31 /* BindNewDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindNewDeviceViewController.h; sourceTree = "<group>"; };
+		D8B81F4D1E75087F00E43F31 /* BindNewDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindNewDeviceViewController.m; sourceTree = "<group>"; };
+		D8B81F4E1E75087F00E43F31 /* BindNewDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BindNewDeviceViewController.xib; sourceTree = "<group>"; };
+		D8BB8C3B1E83BF4F0087EE69 /* MainBindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBindViewController.h; sourceTree = "<group>"; };
+		D8BB8C3C1E83BF4F0087EE69 /* MainBindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBindViewController.m; sourceTree = "<group>"; };
+		D8BB8C3D1E83BF4F0087EE69 /* MainBindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainBindViewController.xib; sourceTree = "<group>"; };
+		D8BB8C401E83BF600087EE69 /* AutoBindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoBindViewController.h; sourceTree = "<group>"; };
+		D8BB8C411E83BF600087EE69 /* AutoBindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoBindViewController.m; sourceTree = "<group>"; };
+		D8BB8C421E83BF600087EE69 /* AutoBindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoBindViewController.xib; sourceTree = "<group>"; };
+		D8BB8C451E83CE570087EE69 /* SystemInstallDesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInstallDesController.h; sourceTree = "<group>"; };
+		D8BB8C461E83CE570087EE69 /* SystemInstallDesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInstallDesController.m; sourceTree = "<group>"; };
+		D8C0F1611E8BDBD7003A3736 /* blue.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = blue.gif; sourceTree = "<group>"; };
+		D8C0F1621E8BDBD7003A3736 /* orange.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orange.gif; sourceTree = "<group>"; };
+		D8E71BA61E767AD800D3300E /* BindDeviceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindDeviceView.h; sourceTree = "<group>"; };
+		D8E71BA71E767AD800D3300E /* BindDeviceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindDeviceView.m; sourceTree = "<group>"; };
+		D8E71BA91E767B4E00D3300E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D8E71BAC1E7693A200D3300E /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		D8E71BAD1E7693A200D3300E /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		D8E71BAE1E7693A200D3300E /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		D8E71BAF1E7693A200D3300E /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		D8E71BB01E7693A200D3300E /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		D8E71BB11E7693A200D3300E /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		D8E71BB21E7693A200D3300E /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		D8E71BB31E7693A200D3300E /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		D8E71BB41E7693A200D3300E /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		D8E71BB51E7693A200D3300E /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		D8E71BB61E7693A200D3300E /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		D8E71BB71E7693A200D3300E /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		D8E71BB91E7693A200D3300E /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		D8E71BBA1E7693A200D3300E /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		D8E71BBB1E7693A200D3300E /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		D8E71BBC1E7693A200D3300E /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		D8E71BBD1E7693A200D3300E /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		D8E71BBE1E7693A200D3300E /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		D8E71BC01E7693A200D3300E /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		D8E71BC11E7693A200D3300E /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		D8E71BC31E7693A200D3300E /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		D8E71BC41E7693A200D3300E /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		D8E71BC51E7693A200D3300E /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		D8E71BC61E7693A200D3300E /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		D8E71BC71E7693A200D3300E /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		D8E71BC81E7693A200D3300E /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		D8E71BC91E7693A200D3300E /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		D8E71BCA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		D8E71BCB1E7693A200D3300E /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
+		D8E71BCD1E7693A200D3300E /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		D8E71BDC1E76983D00D3300E /* CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunction.h; sourceTree = "<group>"; };
+		D8E71BDD1E76983D00D3300E /* CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunction.m; sourceTree = "<group>"; };
+		D8EC86CF1E950DE600402C8A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D8EC86D11E9511F200402C8A /* APPUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPUpdateManager.h; sourceTree = "<group>"; };
+		D8EC86D21E9511F200402C8A /* APPUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPUpdateManager.m; sourceTree = "<group>"; };
+		D8EC878F1E9C6F4F00402C8A /* swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC87911E9C6F4F00402C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8EC87931E9C6F4F00402C8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8EC87961E9C6F4F00402C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8EC87981E9C6F4F00402C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8EC879B1E9C6F4F00402C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8EC879D1E9C6F4F00402C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EC87A21E9C6F4F00402C8A /* swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC87A61E9C6F4F00402C8A /* swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftTests.swift; sourceTree = "<group>"; };
+		D8EC87A81E9C6F4F00402C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EC87AD1E9C6F4F00402C8A /* swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC87B11E9C6F4F00402C8A /* swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUITests.swift; sourceTree = "<group>"; };
+		D8EC87B31E9C6F4F00402C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D88F10B91E6FCC5C00CDF34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81B206C1E8CAF2900259550 /* CoreGraphics.framework in Frameworks */,
+				D81B206A1E8CAF2100259550 /* MobileCoreServices.framework in Frameworks */,
+				D81B20681E8CAF1200259550 /* QuartzCore.framework in Frameworks */,
+				D81B20631E8BE5D400259550 /* Pods_CarCare.framework in Frameworks */,
+				D814EF2C1E6FD5C500FB8DC8 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88F10D21E6FCC5C00CDF34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88F10DD1E6FCC5C00CDF34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC878C1E9C6F4F00402C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC879F1E9C6F4F00402C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC87AA1E9C6F4F00402C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64C608D3DF4D17275A9B1B8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F143AD4C185137B11DC99F3 /* Pods-CarCare.debug.xcconfig */,
+				9AE0AC0599B74234FCDBEB03 /* Pods-CarCare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D814EF2A1E6FD5C500FB8DC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D81B206E1E8CB06200259550 /* FLAnimatedImage.framework */,
+				D81B206B1E8CAF2900259550 /* CoreGraphics.framework */,
+				D81B20691E8CAF2100259550 /* MobileCoreServices.framework */,
+				D81B20671E8CAF1200259550 /* QuartzCore.framework */,
+				D814EF2B1E6FD5C500FB8DC8 /* ImageIO.framework */,
+				05B450ADD9F5AD594FDEEFD0 /* Pods_CarCare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D814EF411E73A74200FB8DC8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				D814EF421E73A74200FB8DC8 /* Info.plist */,
+				D814EF431E73A74200FB8DC8 /* MASCompositeConstraint.h */,
+				D814EF441E73A74200FB8DC8 /* MASCompositeConstraint.m */,
+				D814EF451E73A74200FB8DC8 /* MASConstraint+Private.h */,
+				D814EF461E73A74200FB8DC8 /* MASConstraint.h */,
+				D814EF471E73A74200FB8DC8 /* MASConstraint.m */,
+				D814EF481E73A74200FB8DC8 /* MASConstraintMaker.h */,
+				D814EF491E73A74200FB8DC8 /* MASConstraintMaker.m */,
+				D814EF4A1E73A74200FB8DC8 /* MASLayoutConstraint.h */,
+				D814EF4B1E73A74200FB8DC8 /* MASLayoutConstraint.m */,
+				D814EF4C1E73A74200FB8DC8 /* Masonry.h */,
+				D814EF4D1E73A74200FB8DC8 /* MASUtilities.h */,
+				D814EF4E1E73A74200FB8DC8 /* MASViewAttribute.h */,
+				D814EF4F1E73A74200FB8DC8 /* MASViewAttribute.m */,
+				D814EF501E73A74200FB8DC8 /* MASViewConstraint.h */,
+				D814EF511E73A74200FB8DC8 /* MASViewConstraint.m */,
+				D814EF521E73A74200FB8DC8 /* NSArray+MASAdditions.h */,
+				D814EF531E73A74200FB8DC8 /* NSArray+MASAdditions.m */,
+				D814EF541E73A74200FB8DC8 /* NSArray+MASShorthandAdditions.h */,
+				D814EF551E73A74200FB8DC8 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				D814EF561E73A74200FB8DC8 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				D814EF571E73A74200FB8DC8 /* View+MASAdditions.h */,
+				D814EF581E73A74200FB8DC8 /* View+MASAdditions.m */,
+				D814EF591E73A74200FB8DC8 /* View+MASShorthandAdditions.h */,
+				D814EF5A1E73A74200FB8DC8 /* ViewController+MASAdditions.h */,
+				D814EF5B1E73A74200FB8DC8 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		D82675B01EC0476500DA7DCC /* VOICEEN */ = {
+			isa = PBXGroup;
+			children = (
+				D82675B11EC0476500DA7DCC /* 右前轮胎气压过低EN.wav */,
+				D82675B21EC0476500DA7DCC /* 右前轮胎气压过高EN.wav */,
+				D82675B31EC0476500DA7DCC /* 右前轮胎温度过高EN.wav */,
+				D82675B41EC0476500DA7DCC /* 右前轮胎漏气 气压过低EN.wav */,
+				D82675B51EC0476500DA7DCC /* 右前轮胎漏气EN.wav */,
+				D82675B61EC0476500DA7DCC /* 右前轮胎电量过低EN.wav */,
+				D82675B71EC0476500DA7DCC /* 右后轮胎气压过低EN.wav */,
+				D82675B81EC0476500DA7DCC /* 右后轮胎气压过高EN.wav */,
+				D82675B91EC0476500DA7DCC /* 右后轮胎温度过高EN.wav */,
+				D82675BA1EC0476500DA7DCC /* 右后轮胎漏气 气压过低EN.wav */,
+				D82675BB1EC0476500DA7DCC /* 右后轮胎漏气EN.wav */,
+				D82675BC1EC0476500DA7DCC /* 右后轮胎电量过低EN.wav */,
+				D82675BD1EC0476500DA7DCC /* 左前轮胎气压过低EN.wav */,
+				D82675BE1EC0476500DA7DCC /* 左前轮胎气压过高EN.wav */,
+				D82675BF1EC0476500DA7DCC /* 左前轮胎温度过高EN.wav */,
+				D82675C01EC0476500DA7DCC /* 左前轮胎漏气 气压过低EN.wav */,
+				D82675C11EC0476500DA7DCC /* 左前轮胎漏气EN.wav */,
+				D82675C21EC0476500DA7DCC /* 左前轮胎电量过低EN.wav */,
+				D82675C31EC0476500DA7DCC /* 左后轮胎气压过低EN.wav */,
+				D82675C41EC0476500DA7DCC /* 左后轮胎气压过高EN.wav */,
+				D82675C51EC0476500DA7DCC /* 左后轮胎温度过高EN.wav */,
+				D82675C61EC0476500DA7DCC /* 左后轮胎漏气 气压过低EN.wav */,
+				D82675C71EC0476500DA7DCC /* 左后轮胎漏气EN.wav */,
+				D82675C81EC0476500DA7DCC /* 左后轮胎电量过低EN.wav */,
+			);
+			path = VOICEEN;
+			sourceTree = "<group>";
+		};
+		D82675E11EC04E3F00DA7DCC /* VOICEZH */ = {
+			isa = PBXGroup;
+			children = (
+				D82675E21EC04E3F00DA7DCC /* 右前轮胎气压过低.caf */,
+				D82675E31EC04E3F00DA7DCC /* 右前轮胎气压过高.caf */,
+				D82675E41EC04E3F00DA7DCC /* 右前轮胎温度过高.caf */,
+				D82675E51EC04E3F00DA7DCC /* 右前轮胎漏气 气压过低.caf */,
+				D82675E61EC04E3F00DA7DCC /* 右前轮胎漏气.caf */,
+				D82675E71EC04E3F00DA7DCC /* 右前轮胎电量过低.caf */,
+				D82675E81EC04E3F00DA7DCC /* 右后轮胎气压过低.caf */,
+				D82675E91EC04E3F00DA7DCC /* 右后轮胎气压过高.caf */,
+				D82675EA1EC04E3F00DA7DCC /* 右后轮胎温度过高.caf */,
+				D82675EB1EC04E3F00DA7DCC /* 右后轮胎漏气 气压过低.caf */,
+				D82675EC1EC04E3F00DA7DCC /* 右后轮胎漏气.caf */,
+				D82675ED1EC04E3F00DA7DCC /* 右后轮胎电量过低.caf */,
+				D82675EE1EC04E3F00DA7DCC /* 左前轮胎气压过低.caf */,
+				D82675EF1EC04E3F00DA7DCC /* 左前轮胎气压过高.caf */,
+				D82675F01EC04E3F00DA7DCC /* 左前轮胎温度过高.caf */,
+				D82675F11EC04E3F00DA7DCC /* 左前轮胎漏气 气压过低.caf */,
+				D82675F21EC04E3F00DA7DCC /* 左前轮胎漏气.caf */,
+				D82675F31EC04E3F00DA7DCC /* 左前轮胎电量过低.caf */,
+				D82675F41EC04E3F00DA7DCC /* 左后轮胎气压过低.caf */,
+				D82675F51EC04E3F00DA7DCC /* 左后轮胎气压过高.caf */,
+				D82675F61EC04E3F00DA7DCC /* 左后轮胎温度过高.caf */,
+				D82675F71EC04E3F00DA7DCC /* 左后轮胎漏气 气压过低.caf */,
+				D82675F81EC04E3F00DA7DCC /* 左后轮胎漏气.caf */,
+				D82675F91EC04E3F00DA7DCC /* 左后轮胎电量过低.caf */,
+			);
+			path = VOICEZH;
+			sourceTree = "<group>";
+		};
+		D88F10B31E6FCC5C00CDF34D = {
+			isa = PBXGroup;
+			children = (
+				D82675E11EC04E3F00DA7DCC /* VOICEZH */,
+				D82675B01EC0476500DA7DCC /* VOICEEN */,
+				D88F10BE1E6FCC5C00CDF34D /* CarCare */,
+				D88F10D81E6FCC5C00CDF34D /* CarCareTests */,
+				D88F10E31E6FCC5C00CDF34D /* CarCareUITests */,
+				D8EC87901E9C6F4F00402C8A /* swift */,
+				D8EC87A51E9C6F4F00402C8A /* swiftTests */,
+				D8EC87B01E9C6F4F00402C8A /* swiftUITests */,
+				D88F10BD1E6FCC5C00CDF34D /* Products */,
+				D814EF2A1E6FD5C500FB8DC8 /* Frameworks */,
+				64C608D3DF4D17275A9B1B8E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D88F10BD1E6FCC5C00CDF34D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D88F10BC1E6FCC5C00CDF34D /* CarCare.app */,
+				D88F10D51E6FCC5C00CDF34D /* CarCareTests.xctest */,
+				D88F10E01E6FCC5C00CDF34D /* CarCareUITests.xctest */,
+				D8EC878F1E9C6F4F00402C8A /* swift.app */,
+				D8EC87A21E9C6F4F00402C8A /* swiftTests.xctest */,
+				D8EC87AD1E9C6F4F00402C8A /* swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D88F10BE1E6FCC5C00CDF34D /* CarCare */ = {
+			isa = PBXGroup;
+			children = (
+				D8C0F1611E8BDBD7003A3736 /* blue.gif */,
+				D8C0F1621E8BDBD7003A3736 /* orange.gif */,
+				D814EF371E6FF7A900FB8DC8 /* MIBadgeButton.h */,
+				D814EF381E6FF7A900FB8DC8 /* MIBadgeButton.m */,
+				D814EF3A1E6FF89200FB8DC8 /* MIBadgeLabel.h */,
+				D814EF3B1E6FF89200FB8DC8 /* MIBadgeLabel.m */,
+				D88F10C21E6FCC5C00CDF34D /* AppDelegate.h */,
+				D88F10C31E6FCC5C00CDF34D /* AppDelegate.m */,
+				D88F10C51E6FCC5C00CDF34D /* ViewController.h */,
+				D88F10C61E6FCC5C00CDF34D /* ViewController.m */,
+				D8E71BA61E767AD800D3300E /* BindDeviceView.h */,
+				D8E71BA71E767AD800D3300E /* BindDeviceView.m */,
+				D8B81F4C1E75087F00E43F31 /* BindNewDeviceViewController.h */,
+				D8B81F4D1E75087F00E43F31 /* BindNewDeviceViewController.m */,
+				D8B81F4E1E75087F00E43F31 /* BindNewDeviceViewController.xib */,
+				D8BB8C3B1E83BF4F0087EE69 /* MainBindViewController.h */,
+				D8BB8C3C1E83BF4F0087EE69 /* MainBindViewController.m */,
+				D8BB8C3D1E83BF4F0087EE69 /* MainBindViewController.xib */,
+				D8BB8C401E83BF600087EE69 /* AutoBindViewController.h */,
+				D8BB8C411E83BF600087EE69 /* AutoBindViewController.m */,
+				D8BB8C421E83BF600087EE69 /* AutoBindViewController.xib */,
+				D88F10C81E6FCC5C00CDF34D /* Main.storyboard */,
+				D8E71BA91E767B4E00D3300E /* PrefixHeader.pch */,
+				D8E71BDC1E76983D00D3300E /* CommonFunction.h */,
+				D8E71BDD1E76983D00D3300E /* CommonFunction.m */,
+				D81F277B1E7A3C6500075891 /* SystemSettingViewController.h */,
+				D81F277C1E7A3C6500075891 /* SystemSettingViewController.m */,
+				D81F277D1E7A3C6500075891 /* SystemSettingViewController.xib */,
+				D8BB8C451E83CE570087EE69 /* SystemInstallDesController.h */,
+				D8BB8C461E83CE570087EE69 /* SystemInstallDesController.m */,
+				D826761D1EC0563600DA7DCC /* APPUseDesViewController.h */,
+				D826761E1EC0563600DA7DCC /* APPUseDesViewController.m */,
+				D82676181EC053BF00DA7DCC /* HelpViewController.h */,
+				D82676191EC053BF00DA7DCC /* HelpViewController.m */,
+				D826761A1EC053BF00DA7DCC /* HelpViewController.xib */,
+				D8034E8D1E860532000A817F /* AotuSearchView.h */,
+				D8034E8E1E860532000A817F /* AotuSearchView.m */,
+				D8EC86D11E9511F200402C8A /* APPUpdateManager.h */,
+				D8EC86D21E9511F200402C8A /* APPUpdateManager.m */,
+				D88F10CB1E6FCC5C00CDF34D /* Assets.xcassets */,
+				D88F10D01E6FCC5C00CDF34D /* Info.plist */,
+				D8B573531EBC1C2900BA4DA2 /* Localizable.strings */,
+				D81B20721E8CD1D900259550 /* AnimatedGIFImageSerialization.h */,
+				D81B20731E8CD1D900259550 /* AnimatedGIFImageSerialization.m */,
+				D8EC86CF1E950DE600402C8A /* Launch Screen.storyboard */,
+				D8E71BAA1E7693A200D3300E /* IQKeyBoardManager */,
+				D814EF411E73A74200FB8DC8 /* Masonry */,
+				D88F10BF1E6FCC5C00CDF34D /* Supporting Files */,
+			);
+			path = CarCare;
+			sourceTree = "<group>";
+		};
+		D88F10BF1E6FCC5C00CDF34D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D88F10C01E6FCC5C00CDF34D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D88F10D81E6FCC5C00CDF34D /* CarCareTests */ = {
+			isa = PBXGroup;
+			children = (
+				D88F10D91E6FCC5C00CDF34D /* CarCareTests.m */,
+				D88F10DB1E6FCC5C00CDF34D /* Info.plist */,
+			);
+			path = CarCareTests;
+			sourceTree = "<group>";
+		};
+		D88F10E31E6FCC5C00CDF34D /* CarCareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D88F10E41E6FCC5C00CDF34D /* CarCareUITests.m */,
+				D88F10E61E6FCC5C00CDF34D /* Info.plist */,
+			);
+			path = CarCareUITests;
+			sourceTree = "<group>";
+		};
+		D8E71BAA1E7693A200D3300E /* IQKeyBoardManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8E71BAB1E7693A200D3300E /* Categories */,
+				D8E71BB81E7693A200D3300E /* Constants */,
+				D8E71BBB1E7693A200D3300E /* IQKeyboardManager.h */,
+				D8E71BBC1E7693A200D3300E /* IQKeyboardManager.m */,
+				D8E71BBD1E7693A200D3300E /* IQKeyboardReturnKeyHandler.h */,
+				D8E71BBE1E7693A200D3300E /* IQKeyboardReturnKeyHandler.m */,
+				D8E71BBF1E7693A200D3300E /* IQTextView */,
+				D8E71BC21E7693A200D3300E /* IQToolbar */,
+				D8E71BCB1E7693A200D3300E /* KeyboardManager.h */,
+				D8E71BCC1E7693A200D3300E /* Resources */,
+			);
+			name = IQKeyBoardManager;
+			path = Masonry/IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
+		D8E71BAB1E7693A200D3300E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D8E71BAC1E7693A200D3300E /* IQNSArray+Sort.h */,
+				D8E71BAD1E7693A200D3300E /* IQNSArray+Sort.m */,
+				D8E71BAE1E7693A200D3300E /* IQUIScrollView+Additions.h */,
+				D8E71BAF1E7693A200D3300E /* IQUIScrollView+Additions.m */,
+				D8E71BB01E7693A200D3300E /* IQUITextFieldView+Additions.h */,
+				D8E71BB11E7693A200D3300E /* IQUITextFieldView+Additions.m */,
+				D8E71BB21E7693A200D3300E /* IQUIView+Hierarchy.h */,
+				D8E71BB31E7693A200D3300E /* IQUIView+Hierarchy.m */,
+				D8E71BB41E7693A200D3300E /* IQUIViewController+Additions.h */,
+				D8E71BB51E7693A200D3300E /* IQUIViewController+Additions.m */,
+				D8E71BB61E7693A200D3300E /* IQUIWindow+Hierarchy.h */,
+				D8E71BB71E7693A200D3300E /* IQUIWindow+Hierarchy.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D8E71BB81E7693A200D3300E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D8E71BB91E7693A200D3300E /* IQKeyboardManagerConstants.h */,
+				D8E71BBA1E7693A200D3300E /* IQKeyboardManagerConstantsInternal.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D8E71BBF1E7693A200D3300E /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				D8E71BC01E7693A200D3300E /* IQTextView.h */,
+				D8E71BC11E7693A200D3300E /* IQTextView.m */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		D8E71BC21E7693A200D3300E /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				D8E71BC31E7693A200D3300E /* IQBarButtonItem.h */,
+				D8E71BC41E7693A200D3300E /* IQBarButtonItem.m */,
+				D8E71BC51E7693A200D3300E /* IQTitleBarButtonItem.h */,
+				D8E71BC61E7693A200D3300E /* IQTitleBarButtonItem.m */,
+				D8E71BC71E7693A200D3300E /* IQToolbar.h */,
+				D8E71BC81E7693A200D3300E /* IQToolbar.m */,
+				D8E71BC91E7693A200D3300E /* IQUIView+IQKeyboardToolbar.h */,
+				D8E71BCA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		D8E71BCC1E7693A200D3300E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8E71BCD1E7693A200D3300E /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8EC87901E9C6F4F00402C8A /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				D8EC87911E9C6F4F00402C8A /* AppDelegate.swift */,
+				D8EC87931E9C6F4F00402C8A /* ViewController.swift */,
+				D8EC87951E9C6F4F00402C8A /* Main.storyboard */,
+				D8EC87981E9C6F4F00402C8A /* Assets.xcassets */,
+				D8EC879A1E9C6F4F00402C8A /* LaunchScreen.storyboard */,
+				D8EC879D1E9C6F4F00402C8A /* Info.plist */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		D8EC87A51E9C6F4F00402C8A /* swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8EC87A61E9C6F4F00402C8A /* swiftTests.swift */,
+				D8EC87A81E9C6F4F00402C8A /* Info.plist */,
+			);
+			path = swiftTests;
+			sourceTree = "<group>";
+		};
+		D8EC87B01E9C6F4F00402C8A /* swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8EC87B11E9C6F4F00402C8A /* swiftUITests.swift */,
+				D8EC87B31E9C6F4F00402C8A /* Info.plist */,
+			);
+			path = swiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D88F10BB1E6FCC5C00CDF34D /* CarCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88F10E91E6FCC5C00CDF34D /* Build configuration list for PBXNativeTarget "CarCare" */;
+			buildPhases = (
+				0F9612483D2782F87841E46F /* [CP] Check Pods Manifest.lock */,
+				D88F10B81E6FCC5C00CDF34D /* Sources */,
+				D88F10B91E6FCC5C00CDF34D /* Frameworks */,
+				D88F10BA1E6FCC5C00CDF34D /* Resources */,
+				F06D0A1FD82FB87D21FC9266 /* [CP] Embed Pods Frameworks */,
+				EB87FE57BAB63D08EB679A1A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarCare;
+			productName = CarCare;
+			productReference = D88F10BC1E6FCC5C00CDF34D /* CarCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D88F10D41E6FCC5C00CDF34D /* CarCareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88F10EC1E6FCC5C00CDF34D /* Build configuration list for PBXNativeTarget "CarCareTests" */;
+			buildPhases = (
+				D88F10D11E6FCC5C00CDF34D /* Sources */,
+				D88F10D21E6FCC5C00CDF34D /* Frameworks */,
+				D88F10D31E6FCC5C00CDF34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D88F10D71E6FCC5C00CDF34D /* PBXTargetDependency */,
+			);
+			name = CarCareTests;
+			productName = CarCareTests;
+			productReference = D88F10D51E6FCC5C00CDF34D /* CarCareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D88F10DF1E6FCC5C00CDF34D /* CarCareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88F10EF1E6FCC5C00CDF34D /* Build configuration list for PBXNativeTarget "CarCareUITests" */;
+			buildPhases = (
+				D88F10DC1E6FCC5C00CDF34D /* Sources */,
+				D88F10DD1E6FCC5C00CDF34D /* Frameworks */,
+				D88F10DE1E6FCC5C00CDF34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D88F10E21E6FCC5C00CDF34D /* PBXTargetDependency */,
+			);
+			name = CarCareUITests;
+			productName = CarCareUITests;
+			productReference = D88F10E01E6FCC5C00CDF34D /* CarCareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D8EC878E1E9C6F4F00402C8A /* swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EC87B41E9C6F4F00402C8A /* Build configuration list for PBXNativeTarget "swift" */;
+			buildPhases = (
+				D8EC878B1E9C6F4F00402C8A /* Sources */,
+				D8EC878C1E9C6F4F00402C8A /* Frameworks */,
+				D8EC878D1E9C6F4F00402C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swift;
+			productName = swift;
+			productReference = D8EC878F1E9C6F4F00402C8A /* swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8EC87A11E9C6F4F00402C8A /* swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EC87B71E9C6F4F00402C8A /* Build configuration list for PBXNativeTarget "swiftTests" */;
+			buildPhases = (
+				D8EC879E1E9C6F4F00402C8A /* Sources */,
+				D8EC879F1E9C6F4F00402C8A /* Frameworks */,
+				D8EC87A01E9C6F4F00402C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8EC87A41E9C6F4F00402C8A /* PBXTargetDependency */,
+			);
+			name = swiftTests;
+			productName = swiftTests;
+			productReference = D8EC87A21E9C6F4F00402C8A /* swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8EC87AC1E9C6F4F00402C8A /* swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EC87BA1E9C6F4F00402C8A /* Build configuration list for PBXNativeTarget "swiftUITests" */;
+			buildPhases = (
+				D8EC87A91E9C6F4F00402C8A /* Sources */,
+				D8EC87AA1E9C6F4F00402C8A /* Frameworks */,
+				D8EC87AB1E9C6F4F00402C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8EC87AF1E9C6F4F00402C8A /* PBXTargetDependency */,
+			);
+			name = swiftUITests;
+			productName = swiftUITests;
+			productReference = D8EC87AD1E9C6F4F00402C8A /* swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D88F10B41E6FCC5C00CDF34D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = chaoyue;
+				TargetAttributes = {
+					D88F10BB1E6FCC5C00CDF34D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MPWM246NM7;
+						ProvisioningStyle = Automatic;
+					};
+					D88F10D41E6FCC5C00CDF34D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FB7B7UKSNL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D88F10BB1E6FCC5C00CDF34D;
+					};
+					D88F10DF1E6FCC5C00CDF34D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FB7B7UKSNL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D88F10BB1E6FCC5C00CDF34D;
+					};
+					D8EC878E1E9C6F4F00402C8A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MPWM246NM7;
+						ProvisioningStyle = Automatic;
+					};
+					D8EC87A11E9C6F4F00402C8A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MPWM246NM7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8EC878E1E9C6F4F00402C8A;
+					};
+					D8EC87AC1E9C6F4F00402C8A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MPWM246NM7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8EC878E1E9C6F4F00402C8A;
+					};
+				};
+			};
+			buildConfigurationList = D88F10B71E6FCC5C00CDF34D /* Build configuration list for PBXProject "CarCare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D88F10B31E6FCC5C00CDF34D;
+			productRefGroup = D88F10BD1E6FCC5C00CDF34D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D88F10BB1E6FCC5C00CDF34D /* CarCare */,
+				D88F10D41E6FCC5C00CDF34D /* CarCareTests */,
+				D88F10DF1E6FCC5C00CDF34D /* CarCareUITests */,
+				D8EC878E1E9C6F4F00402C8A /* swift */,
+				D8EC87A11E9C6F4F00402C8A /* swiftTests */,
+				D8EC87AC1E9C6F4F00402C8A /* swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D88F10BA1E6FCC5C00CDF34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82675D81EC0476500DA7DCC /* 左前轮胎漏气 气压过低EN.wav in Resources */,
+				D82675DE1EC0476500DA7DCC /* 左后轮胎漏气 气压过低EN.wav in Resources */,
+				D826760C1EC04E3F00DA7DCC /* 左后轮胎气压过低.caf in Resources */,
+				D82676041EC04E3F00DA7DCC /* 右后轮胎漏气.caf in Resources */,
+				D82675FE1EC04E3F00DA7DCC /* 右前轮胎漏气.caf in Resources */,
+				D82676061EC04E3F00DA7DCC /* 左前轮胎气压过低.caf in Resources */,
+				D82675E01EC0476500DA7DCC /* 左后轮胎电量过低EN.wav in Resources */,
+				D8BB8C441E83BF600087EE69 /* AutoBindViewController.xib in Resources */,
+				D826760F1EC04E3F00DA7DCC /* 左后轮胎漏气 气压过低.caf in Resources */,
+				D82676071EC04E3F00DA7DCC /* 左前轮胎气压过高.caf in Resources */,
+				D82676031EC04E3F00DA7DCC /* 右后轮胎漏气 气压过低.caf in Resources */,
+				D82675CA1EC0476500DA7DCC /* 右前轮胎气压过高EN.wav in Resources */,
+				D826760D1EC04E3F00DA7DCC /* 左后轮胎气压过高.caf in Resources */,
+				D82675CC1EC0476500DA7DCC /* 右前轮胎漏气 气压过低EN.wav in Resources */,
+				D82675D91EC0476500DA7DCC /* 左前轮胎漏气EN.wav in Resources */,
+				D82676001EC04E3F00DA7DCC /* 右后轮胎气压过低.caf in Resources */,
+				D82675D61EC0476500DA7DCC /* 左前轮胎气压过高EN.wav in Resources */,
+				D8BB8C3F1E83BF4F0087EE69 /* MainBindViewController.xib in Resources */,
+				D82676011EC04E3F00DA7DCC /* 右后轮胎气压过高.caf in Resources */,
+				D82676081EC04E3F00DA7DCC /* 左前轮胎温度过高.caf in Resources */,
+				D88F10CC1E6FCC5C00CDF34D /* Assets.xcassets in Resources */,
+				D82675FD1EC04E3F00DA7DCC /* 右前轮胎漏气 气压过低.caf in Resources */,
+				D82675D41EC0476500DA7DCC /* 右后轮胎电量过低EN.wav in Resources */,
+				D82675C91EC0476500DA7DCC /* 右前轮胎气压过低EN.wav in Resources */,
+				D82675D21EC0476500DA7DCC /* 右后轮胎漏气 气压过低EN.wav in Resources */,
+				D82675FF1EC04E3F00DA7DCC /* 右前轮胎电量过低.caf in Resources */,
+				D814EF5C1E73A74200FB8DC8 /* Info.plist in Resources */,
+				D8E71BDB1E7693A200D3300E /* IQKeyboardManager.bundle in Resources */,
+				D82676091EC04E3F00DA7DCC /* 左前轮胎漏气 气压过低.caf in Resources */,
+				D826760E1EC04E3F00DA7DCC /* 左后轮胎温度过高.caf in Resources */,
+				D82675FB1EC04E3F00DA7DCC /* 右前轮胎气压过高.caf in Resources */,
+				D8C0F1631E8BDBD7003A3736 /* blue.gif in Resources */,
+				D8B81F501E75087F00E43F31 /* BindNewDeviceViewController.xib in Resources */,
+				D82675D11EC0476500DA7DCC /* 右后轮胎温度过高EN.wav in Resources */,
+				D82675CF1EC0476500DA7DCC /* 右后轮胎气压过低EN.wav in Resources */,
+				D82676021EC04E3F00DA7DCC /* 右后轮胎温度过高.caf in Resources */,
+				D82675D71EC0476500DA7DCC /* 左前轮胎温度过高EN.wav in Resources */,
+				D82675CD1EC0476500DA7DCC /* 右前轮胎漏气EN.wav in Resources */,
+				D82675D31EC0476500DA7DCC /* 右后轮胎漏气EN.wav in Resources */,
+				D8C0F1641E8BDBD7003A3736 /* orange.gif in Resources */,
+				D82675D01EC0476500DA7DCC /* 右后轮胎气压过高EN.wav in Resources */,
+				D82676101EC04E3F00DA7DCC /* 左后轮胎漏气.caf in Resources */,
+				D82675DC1EC0476500DA7DCC /* 左后轮胎气压过高EN.wav in Resources */,
+				D826760A1EC04E3F00DA7DCC /* 左前轮胎漏气.caf in Resources */,
+				D82675DF1EC0476500DA7DCC /* 左后轮胎漏气EN.wav in Resources */,
+				D8B573511EBC1C2900BA4DA2 /* Localizable.strings in Resources */,
+				D82676051EC04E3F00DA7DCC /* 右后轮胎电量过低.caf in Resources */,
+				D826760B1EC04E3F00DA7DCC /* 左前轮胎电量过低.caf in Resources */,
+				D88F10CA1E6FCC5C00CDF34D /* Main.storyboard in Resources */,
+				D81F277F1E7A3C6500075891 /* SystemSettingViewController.xib in Resources */,
+				D826761C1EC053BF00DA7DCC /* HelpViewController.xib in Resources */,
+				D82675D51EC0476500DA7DCC /* 左前轮胎气压过低EN.wav in Resources */,
+				D82675DA1EC0476500DA7DCC /* 左前轮胎电量过低EN.wav in Resources */,
+				D82675DB1EC0476500DA7DCC /* 左后轮胎气压过低EN.wav in Resources */,
+				D82675CE1EC0476500DA7DCC /* 右前轮胎电量过低EN.wav in Resources */,
+				D82676111EC04E3F00DA7DCC /* 左后轮胎电量过低.caf in Resources */,
+				D82675CB1EC0476500DA7DCC /* 右前轮胎温度过高EN.wav in Resources */,
+				D82675FC1EC04E3F00DA7DCC /* 右前轮胎温度过高.caf in Resources */,
+				D8EC86D01E950DE600402C8A /* Launch Screen.storyboard in Resources */,
+				D82675DD1EC0476500DA7DCC /* 左后轮胎温度过高EN.wav in Resources */,
+				D82675FA1EC04E3F00DA7DCC /* 右前轮胎气压过低.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88F10D31E6FCC5C00CDF34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88F10DE1E6FCC5C00CDF34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC878D1E9C6F4F00402C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC879C1E9C6F4F00402C8A /* LaunchScreen.storyboard in Resources */,
+				D8EC87991E9C6F4F00402C8A /* Assets.xcassets in Resources */,
+				D8EC87971E9C6F4F00402C8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC87A01E9C6F4F00402C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC87AB1E9C6F4F00402C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F9612483D2782F87841E46F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB87FE57BAB63D08EB679A1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarCare/Pods-CarCare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06D0A1FD82FB87D21FC9266 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarCare/Pods-CarCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D88F10B81E6FCC5C00CDF34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D814EF641E73A74200FB8DC8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				D8E71BDA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				D8E71BD81E7693A200D3300E /* IQTitleBarButtonItem.m in Sources */,
+				D81B20741E8CD1D900259550 /* AnimatedGIFImageSerialization.m in Sources */,
+				D88F10C71E6FCC5C00CDF34D /* ViewController.m in Sources */,
+				D8E71BDE1E76983D00D3300E /* CommonFunction.m in Sources */,
+				D8BB8C3E1E83BF4F0087EE69 /* MainBindViewController.m in Sources */,
+				D8E71BD21E7693A200D3300E /* IQUIViewController+Additions.m in Sources */,
+				D8E71BA81E767AD800D3300E /* BindDeviceView.m in Sources */,
+				D8E71BD91E7693A200D3300E /* IQToolbar.m in Sources */,
+				D814EF621E73A74200FB8DC8 /* MASViewConstraint.m in Sources */,
+				D8E71BD51E7693A200D3300E /* IQKeyboardReturnKeyHandler.m in Sources */,
+				D88F10C41E6FCC5C00CDF34D /* AppDelegate.m in Sources */,
+				D88F10C11E6FCC5C00CDF34D /* main.m in Sources */,
+				D8E71BCE1E7693A200D3300E /* IQNSArray+Sort.m in Sources */,
+				D826761B1EC053BF00DA7DCC /* HelpViewController.m in Sources */,
+				D814EF3C1E6FF89200FB8DC8 /* MIBadgeLabel.m in Sources */,
+				D814EF651E73A74200FB8DC8 /* View+MASAdditions.m in Sources */,
+				D8E71BCF1E7693A200D3300E /* IQUIScrollView+Additions.m in Sources */,
+				D814EF5D1E73A74200FB8DC8 /* MASCompositeConstraint.m in Sources */,
+				D8E71BD61E7693A200D3300E /* IQTextView.m in Sources */,
+				D82676201EC0563600DA7DCC /* APPUseDesViewController.m in Sources */,
+				D8E71BD41E7693A200D3300E /* IQKeyboardManager.m in Sources */,
+				D814EF611E73A74200FB8DC8 /* MASViewAttribute.m in Sources */,
+				D8034E8F1E860532000A817F /* AotuSearchView.m in Sources */,
+				D814EF5F1E73A74200FB8DC8 /* MASConstraintMaker.m in Sources */,
+				D8E71BD11E7693A200D3300E /* IQUIView+Hierarchy.m in Sources */,
+				D814EF631E73A74200FB8DC8 /* NSArray+MASAdditions.m in Sources */,
+				D8BB8C431E83BF600087EE69 /* AutoBindViewController.m in Sources */,
+				D8BB8C471E83CE570087EE69 /* SystemInstallDesController.m in Sources */,
+				D8E71BD01E7693A200D3300E /* IQUITextFieldView+Additions.m in Sources */,
+				D8E71BD31E7693A200D3300E /* IQUIWindow+Hierarchy.m in Sources */,
+				D814EF661E73A74200FB8DC8 /* ViewController+MASAdditions.m in Sources */,
+				D81F277E1E7A3C6500075891 /* SystemSettingViewController.m in Sources */,
+				D8EC86D31E9511F200402C8A /* APPUpdateManager.m in Sources */,
+				D814EF5E1E73A74200FB8DC8 /* MASConstraint.m in Sources */,
+				D814EF601E73A74200FB8DC8 /* MASLayoutConstraint.m in Sources */,
+				D8B81F4F1E75087F00E43F31 /* BindNewDeviceViewController.m in Sources */,
+				D814EF391E6FF7A900FB8DC8 /* MIBadgeButton.m in Sources */,
+				D8E71BD71E7693A200D3300E /* IQBarButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88F10D11E6FCC5C00CDF34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88F10DA1E6FCC5C00CDF34D /* CarCareTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88F10DC1E6FCC5C00CDF34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88F10E51E6FCC5C00CDF34D /* CarCareUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC878B1E9C6F4F00402C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC87941E9C6F4F00402C8A /* ViewController.swift in Sources */,
+				D8EC87921E9C6F4F00402C8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC879E1E9C6F4F00402C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC87A71E9C6F4F00402C8A /* swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EC87A91E9C6F4F00402C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC87B21E9C6F4F00402C8A /* swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D88F10D71E6FCC5C00CDF34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D88F10BB1E6FCC5C00CDF34D /* CarCare */;
+			targetProxy = D88F10D61E6FCC5C00CDF34D /* PBXContainerItemProxy */;
+		};
+		D88F10E21E6FCC5C00CDF34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D88F10BB1E6FCC5C00CDF34D /* CarCare */;
+			targetProxy = D88F10E11E6FCC5C00CDF34D /* PBXContainerItemProxy */;
+		};
+		D8EC87A41E9C6F4F00402C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EC878E1E9C6F4F00402C8A /* swift */;
+			targetProxy = D8EC87A31E9C6F4F00402C8A /* PBXContainerItemProxy */;
+		};
+		D8EC87AF1E9C6F4F00402C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EC878E1E9C6F4F00402C8A /* swift */;
+			targetProxy = D8EC87AE1E9C6F4F00402C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D88F10C81E6FCC5C00CDF34D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88F10C91E6FCC5C00CDF34D /* Base */,
+				D8B5734E1EBC1C1A00BA4DA2 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8B573531EBC1C2900BA4DA2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8B573521EBC1C2900BA4DA2 /* zh-Hans */,
+				D8B573541EBC1C2D00BA4DA2 /* en */,
+				D8B573551EBC1C3000BA4DA2 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D8EC87951E9C6F4F00402C8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EC87961E9C6F4F00402C8A /* Base */,
+				D8B5734F1EBC1C1A00BA4DA2 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8EC879A1E9C6F4F00402C8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EC879B1E9C6F4F00402C8A /* Base */,
+				D8B573501EBC1C1A00BA4DA2 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D88F10E71E6FCC5C00CDF34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D88F10E81E6FCC5C00CDF34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D88F10EA1E6FCC5C00CDF34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F143AD4C185137B11DC99F3 /* Pods-CarCare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/FLAnimatedImage",
+				);
+				GCC_PREFIX_HEADER = /Users/TCL/Desktop/CarCare/CarCare/CarCare/PrefixHeader.pch;
+				INFOPLIST_FILE = CarCare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.ViecarTPMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/CarCare/PrefixHeader.pch\"";
+			};
+			name = Debug;
+		};
+		D88F10EB1E6FCC5C00CDF34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE0AC0599B74234FCDBEB03 /* Pods-CarCare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/FLAnimatedImage",
+				);
+				GCC_PREFIX_HEADER = /Users/TCL/Desktop/CarCare/CarCare/CarCare/PrefixHeader.pch;
+				INFOPLIST_FILE = CarCare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.ViecarTPMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/CarCare/PrefixHeader.pch\"";
+			};
+			name = Release;
+		};
+		D88F10ED1E6FCC5C00CDF34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FB7B7UKSNL;
+				INFOPLIST_FILE = CarCareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.CarCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarCare.app/CarCare";
+			};
+			name = Debug;
+		};
+		D88F10EE1E6FCC5C00CDF34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FB7B7UKSNL;
+				INFOPLIST_FILE = CarCareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.CarCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarCare.app/CarCare";
+			};
+			name = Release;
+		};
+		D88F10F01E6FCC5C00CDF34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = FB7B7UKSNL;
+				INFOPLIST_FILE = CarCareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.CarCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarCare;
+			};
+			name = Debug;
+		};
+		D88F10F11E6FCC5C00CDF34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = FB7B7UKSNL;
+				INFOPLIST_FILE = CarCareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.CarCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarCare;
+			};
+			name = Release;
+		};
+		D8EC87B51E9C6F4F00402C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				INFOPLIST_FILE = swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D8EC87B61E9C6F4F00402C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				INFOPLIST_FILE = swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D8EC87B81E9C6F4F00402C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				INFOPLIST_FILE = swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.swiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift.app/swift";
+			};
+			name = Debug;
+		};
+		D8EC87B91E9C6F4F00402C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				INFOPLIST_FILE = swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.swiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift.app/swift";
+			};
+			name = Release;
+		};
+		D8EC87BB1E9C6F4F00402C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				INFOPLIST_FILE = swiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.swiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = swift;
+			};
+			name = Debug;
+		};
+		D8EC87BC1E9C6F4F00402C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MPWM246NM7;
+				INFOPLIST_FILE = swiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyue.swiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = swift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D88F10B71E6FCC5C00CDF34D /* Build configuration list for PBXProject "CarCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88F10E71E6FCC5C00CDF34D /* Debug */,
+				D88F10E81E6FCC5C00CDF34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88F10E91E6FCC5C00CDF34D /* Build configuration list for PBXNativeTarget "CarCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88F10EA1E6FCC5C00CDF34D /* Debug */,
+				D88F10EB1E6FCC5C00CDF34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88F10EC1E6FCC5C00CDF34D /* Build configuration list for PBXNativeTarget "CarCareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88F10ED1E6FCC5C00CDF34D /* Debug */,
+				D88F10EE1E6FCC5C00CDF34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88F10EF1E6FCC5C00CDF34D /* Build configuration list for PBXNativeTarget "CarCareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88F10F01E6FCC5C00CDF34D /* Debug */,
+				D88F10F11E6FCC5C00CDF34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EC87B41E9C6F4F00402C8A /* Build configuration list for PBXNativeTarget "swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EC87B51E9C6F4F00402C8A /* Debug */,
+				D8EC87B61E9C6F4F00402C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EC87B71E9C6F4F00402C8A /* Build configuration list for PBXNativeTarget "swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EC87B81E9C6F4F00402C8A /* Debug */,
+				D8EC87B91E9C6F4F00402C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EC87BA1E9C6F4F00402C8A /* Build configuration list for PBXNativeTarget "swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EC87BB1E9C6F4F00402C8A /* Debug */,
+				D8EC87BC1E9C6F4F00402C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D88F10B41E6FCC5C00CDF34D /* Project object */;
+}
