@@ -117,10 +117,10 @@
     }
     
     
-    if (([CommonFunction wheal1MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunction wheal1MacString] substringFromIndex:6]]) ||
-        ([CommonFunction wheal2MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunction wheal2MacString] substringFromIndex:6]]) ||
-        ([CommonFunction wheal3MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunction wheal3MacString] substringFromIndex:6]]) ||
-        ([CommonFunction wheal4MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunction wheal4MacString] substringFromIndex:6]])) {
+    if (([CommonFunc wheal1MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunc wheal1MacString] substringFromIndex:6]]) ||
+        ([CommonFunc wheal2MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunc wheal2MacString] substringFromIndex:6]]) ||
+        ([CommonFunc wheal3MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunc wheal3MacString] substringFromIndex:6]]) ||
+        ([CommonFunc wheal4MacString].length > 6 && [self.macStringtextField.text isEqualToString:[[CommonFunc wheal4MacString] substringFromIndex:6]])) {
         
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"IDS_DEVICE_HAS_BEEN_BIND", @"设备已经被绑定") message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"IDS_ENSURE", @"确定"), nil];
         [alert show];

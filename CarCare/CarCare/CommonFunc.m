@@ -1,14 +1,14 @@
 //
-//  CommonFunction.m
+//  CommonFunc.m
 //  CarCare
 //
 //  Created by joe on 2017/3/13.
 //  Copyright © 2017年 chaoyue. All rights reserved.
 //
 
-#import "CommonFunction.h"
+#import "CommonFunc.h"
 
-@implementation CommonFunction
+@implementation CommonFunc
 
 
 + (NSString *)wheal1MacString{

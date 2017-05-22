@@ -42,7 +42,7 @@
     
     
     
-//    if (![CommonFunction hasSetSetting]) {
+//    if (![CommonFunc hasSetSetting]) {
 //        NSString *yalidanwei = @"Bar";
 //        NSString *wendudanwei = @"°C";
 //        CGFloat defaultYaliShang = 3.0;
@@ -50,16 +50,16 @@
 //        CGFloat defaultWenduShang = 65;
 //        CGFloat defaultDianliang = 20;
 //        
-//        [CommonFunction setisZhenDong:NO];
-//        [CommonFunction setyalidanwei:yalidanwei];
-//        [CommonFunction setwendudanwei:wendudanwei];
-//        [CommonFunction setdefaultYaliShang:defaultYaliShang];
-//        [CommonFunction setdefaultYaliXia:defaultYaliXia];
-//        [CommonFunction setdefaultWenduShang:defaultWenduShang];
-//        [CommonFunction setdefaultdianliangXia:defaultDianliang];
+//        [CommonFunc setisZhenDong:NO];
+//        [CommonFunc setyalidanwei:yalidanwei];
+//        [CommonFunc setwendudanwei:wendudanwei];
+//        [CommonFunc setdefaultYaliShang:defaultYaliShang];
+//        [CommonFunc setdefaultYaliXia:defaultYaliXia];
+//        [CommonFunc setdefaultWenduShang:defaultWenduShang];
+//        [CommonFunc setdefaultdianliangXia:defaultDianliang];
 //        
 //        
-//        [CommonFunction setHasSetSetting];
+//        [CommonFunc setHasSetSetting];
 //    }
     
     [self reloadData];
@@ -69,14 +69,14 @@
 
 
 - (void)reloadData{
-    if ([CommonFunction isZhenDong]) {
+    if ([CommonFunc isZhenDong]) {
         self.zhengdongSwitch.on = YES;
     }else{
         self.zhengdongSwitch.on = NO;
     }
     
     
-    NSString *yalidanwei = [CommonFunction yalidanwei];
+    NSString *yalidanwei = [CommonFunc yalidanwei];
     if ([yalidanwei isEqualToString:@"Bar"]) {
         
         self.yaliSeg.selectedSegmentIndex = 2;
@@ -102,14 +102,14 @@
         self.yalixiaxianSlide.minimumValue = 14.5;
     }
     
-    self.yalishangxianLable.text = [NSString stringWithFormat:@"%.1f",[CommonFunction defaultYaliShang]];
-    self.yalishangxianSlide.value = [CommonFunction defaultYaliShang];
-    self.yalixiaxianLable.text = [NSString stringWithFormat:@"%.1f",[CommonFunction defaultYaliXia]];
-    self.yalixiaxianSlide.value = [CommonFunction defaultYaliXia];
+    self.yalishangxianLable.text = [NSString stringWithFormat:@"%.1f",[CommonFunc defaultYaliShang]];
+    self.yalishangxianSlide.value = [CommonFunc defaultYaliShang];
+    self.yalixiaxianLable.text = [NSString stringWithFormat:@"%.1f",[CommonFunc defaultYaliXia]];
+    self.yalixiaxianSlide.value = [CommonFunc defaultYaliXia];
 
     
     
-    NSString * wendudanwei = [CommonFunction wendudanwei];
+    NSString * wendudanwei = [CommonFunc wendudanwei];
     if ([wendudanwei isEqualToString:@"°C"]) {
         self.wenduSeg.selectedSegmentIndex = 0;
         self.wendushangxianSlide.maximumValue = 80;
@@ -120,14 +120,14 @@
         self.wendushangxianSlide.minimumValue = 140;
     }
     
-    self.wendushanxianLable.text = [NSString stringWithFormat:@"%.1f",[CommonFunction defaultWenduShang]];
-    self.wendushangxianSlide.value = [CommonFunction defaultWenduShang];
+    self.wendushanxianLable.text = [NSString stringWithFormat:@"%.1f",[CommonFunc defaultWenduShang]];
+    self.wendushangxianSlide.value = [CommonFunc defaultWenduShang];
 
     
-    self.dianliangxiaxianLable.text = [NSString stringWithFormat:@"%.0f%%",[CommonFunction defaultdianliangXia]];
+    self.dianliangxiaxianLable.text = [NSString stringWithFormat:@"%.0f%%",[CommonFunc defaultdianliangXia]];
     self.dianliangxiaxianSlide.maximumValue = 100;
     self.dianliangxiaxianSlide.minimumValue = 0;
-    self.dianliangxiaxianSlide.value = [CommonFunction defaultdianliangXia];
+    self.dianliangxiaxianSlide.value = [CommonFunc defaultdianliangXia];
 
 }
 
@@ -466,7 +466,7 @@
 #pragma mark sender
 - (void)zhendongClicked:(UISwitch *)zhendongSwitch{
     
-    [CommonFunction setisZhenDong:zhendongSwitch.isOn];
+    [CommonFunc setisZhenDong:zhendongSwitch.isOn];
     [self reloadData];
     
 }
@@ -475,47 +475,47 @@
     
     switch (segment.selectedSegmentIndex) {
         case 0:{
-            if ([[CommonFunction yalidanwei] isEqualToString:@"Kpa"])  {
-                [CommonFunction setdefaultYaliXia:[CommonFunction defaultYaliXia] / PsiToKpa];
-                [CommonFunction setdefaultYaliShang:[CommonFunction defaultYaliShang] / PsiToKpa];
+            if ([[CommonFunc yalidanwei] isEqualToString:@"Kpa"])  {
+                [CommonFunc setdefaultYaliXia:[CommonFunc defaultYaliXia] / PsiToKpa];
+                [CommonFunc setdefaultYaliShang:[CommonFunc defaultYaliShang] / PsiToKpa];
 
-            }else if([[CommonFunction yalidanwei] isEqualToString:@"Bar"]){
-                [CommonFunction setdefaultYaliXia:[CommonFunction defaultYaliXia] * BarToPsi];
-                [CommonFunction setdefaultYaliShang:[CommonFunction defaultYaliShang] * BarToPsi];
+            }else if([[CommonFunc yalidanwei] isEqualToString:@"Bar"]){
+                [CommonFunc setdefaultYaliXia:[CommonFunc defaultYaliXia] * BarToPsi];
+                [CommonFunc setdefaultYaliShang:[CommonFunc defaultYaliShang] * BarToPsi];
             }
-            [CommonFunction setyalidanwei:@"Psi"];
+            [CommonFunc setyalidanwei:@"Psi"];
             
         }
             break;
         case 1:
             
-            if ([[CommonFunction yalidanwei] isEqualToString:@"Psi"])  {
-                [CommonFunction setdefaultYaliXia:[CommonFunction defaultYaliXia] * PsiToKpa];
-                [CommonFunction setdefaultYaliShang:[CommonFunction defaultYaliShang] * PsiToKpa];
+            if ([[CommonFunc yalidanwei] isEqualToString:@"Psi"])  {
+                [CommonFunc setdefaultYaliXia:[CommonFunc defaultYaliXia] * PsiToKpa];
+                [CommonFunc setdefaultYaliShang:[CommonFunc defaultYaliShang] * PsiToKpa];
 
-            }else if([[CommonFunction yalidanwei] isEqualToString:@"Bar"]){
-                [CommonFunction setdefaultYaliXia:[CommonFunction defaultYaliXia] * 100];
-                [CommonFunction setdefaultYaliShang:[CommonFunction defaultYaliShang] * 100];
+            }else if([[CommonFunc yalidanwei] isEqualToString:@"Bar"]){
+                [CommonFunc setdefaultYaliXia:[CommonFunc defaultYaliXia] * 100];
+                [CommonFunc setdefaultYaliShang:[CommonFunc defaultYaliShang] * 100];
 
             }
 
             
             
-            [CommonFunction setyalidanwei:@"Kpa"];
+            [CommonFunc setyalidanwei:@"Kpa"];
 
             break;
         case 2:
             
-            if ([[CommonFunction yalidanwei] isEqualToString:@"Psi"])  {
-                [CommonFunction setdefaultYaliXia:[CommonFunction defaultYaliXia] / BarToPsi];
-                [CommonFunction setdefaultYaliShang:[CommonFunction defaultYaliShang] / BarToPsi];
+            if ([[CommonFunc yalidanwei] isEqualToString:@"Psi"])  {
+                [CommonFunc setdefaultYaliXia:[CommonFunc defaultYaliXia] / BarToPsi];
+                [CommonFunc setdefaultYaliShang:[CommonFunc defaultYaliShang] / BarToPsi];
 
-            }else if([[CommonFunction yalidanwei] isEqualToString:@"Kpa"]){
-                [CommonFunction setdefaultYaliXia:[CommonFunction defaultYaliXia] * 0.01];
-                [CommonFunction setdefaultYaliShang:[CommonFunction defaultYaliShang] * 0.01];
+            }else if([[CommonFunc yalidanwei] isEqualToString:@"Kpa"]){
+                [CommonFunc setdefaultYaliXia:[CommonFunc defaultYaliXia] * 0.01];
+                [CommonFunc setdefaultYaliShang:[CommonFunc defaultYaliShang] * 0.01];
 
             }
-            [CommonFunction setyalidanwei:@"Bar"];
+            [CommonFunc setyalidanwei:@"Bar"];
 
             break;
             
@@ -537,15 +537,15 @@
     switch (segmeng.selectedSegmentIndex) {
         case 0:{
             
-            [CommonFunction setdefaultWenduShang:([CommonFunction defaultWenduShang] -32) / 1.8];
-            [CommonFunction setwendudanwei:@"°C"];
+            [CommonFunc setdefaultWenduShang:([CommonFunc defaultWenduShang] -32) / 1.8];
+            [CommonFunc setwendudanwei:@"°C"];
             
         }
             break;
         case 1:
             
-            [CommonFunction setdefaultWenduShang:[CommonFunction defaultWenduShang] * 1.8 + 32];
-            [CommonFunction setwendudanwei:@"°F"];
+            [CommonFunc setdefaultWenduShang:[CommonFunc defaultWenduShang] * 1.8 + 32];
+            [CommonFunc setwendudanwei:@"°F"];
             
             break;
         default:
@@ -560,26 +560,26 @@
 
 - (void)yalishangxianSlide_cilcked:(UISlider *)slide{
     
-    [CommonFunction setdefaultYaliShang:slide.value];
+    [CommonFunc setdefaultYaliShang:slide.value];
     [self reloadData];
 
     
 }
 
 - (void)yalixiaxianSlide_cilcked:(UISlider *)slide{
-    [CommonFunction setdefaultYaliXia:slide.value];
+    [CommonFunc setdefaultYaliXia:slide.value];
     [self reloadData];
 
 }
 
 - (void)wendushangxianSlide_cilcked:(UISlider *)slide{
-    [CommonFunction setdefaultWenduShang:slide.value];
+    [CommonFunc setdefaultWenduShang:slide.value];
     [self reloadData];
 
 }
 
 - (void)dianliangxiaxianSlide_cilcked:(UISlider *)slide{
-    [CommonFunction setdefaultdianliangXia:slide.value];
+    [CommonFunc setdefaultdianliangXia:slide.value];
     [self reloadData];
 
 }
@@ -600,13 +600,13 @@
         CGFloat defaultWenduShang = 65;
         CGFloat defaultDianliang = 20;
         
-        [CommonFunction setisZhenDong:NO];
-        [CommonFunction setyalidanwei:yalidanwei];
-        [CommonFunction setwendudanwei:wendudanwei];
-        [CommonFunction setdefaultYaliShang:defaultYaliShang];
-        [CommonFunction setdefaultYaliXia:defaultYaliXia];
-        [CommonFunction setdefaultWenduShang:defaultWenduShang];
-        [CommonFunction setdefaultdianliangXia:defaultDianliang];
+        [CommonFunc setisZhenDong:NO];
+        [CommonFunc setyalidanwei:yalidanwei];
+        [CommonFunc setwendudanwei:wendudanwei];
+        [CommonFunc setdefaultYaliShang:defaultYaliShang];
+        [CommonFunc setdefaultYaliXia:defaultYaliXia];
+        [CommonFunc setdefaultWenduShang:defaultWenduShang];
+        [CommonFunc setdefaultdianliangXia:defaultDianliang];
     }
     
     [self reloadData];

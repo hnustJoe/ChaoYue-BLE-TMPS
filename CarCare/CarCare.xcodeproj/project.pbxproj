@@ -112,7 +112,7 @@
 		D8E71BD91E7693A200D3300E /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BC81E7693A200D3300E /* IQToolbar.m */; };
 		D8E71BDA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BCA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m */; };
 		D8E71BDB1E7693A200D3300E /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D8E71BCD1E7693A200D3300E /* IQKeyboardManager.bundle */; };
-		D8E71BDE1E76983D00D3300E /* CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BDD1E76983D00D3300E /* CommonFunction.m */; };
+		D8E71BDE1E76983D00D3300E /* CommonFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E71BDD1E76983D00D3300E /* CommonFunc.m */; };
 		D8EC86D01E950DE600402C8A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EC86CF1E950DE600402C8A /* Launch Screen.storyboard */; };
 		D8EC86D31E9511F200402C8A /* APPUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EC86D21E9511F200402C8A /* APPUpdateManager.m */; };
 		D8EC87921E9C6F4F00402C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC87911E9C6F4F00402C8A /* AppDelegate.swift */; };
@@ -157,6 +157,7 @@
 
 /* Begin PBXFileReference section */
 		05B450ADD9F5AD594FDEEFD0 /* Pods_CarCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCC70041ED28D82005FE971 /* CommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunc.h; sourceTree = "<group>"; };
 		9AE0AC0599B74234FCDBEB03 /* Pods-CarCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarCare/Pods-CarCare.release.xcconfig"; sourceTree = "<group>"; };
 		9F143AD4C185137B11DC99F3 /* Pods-CarCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarCare/Pods-CarCare.debug.xcconfig"; sourceTree = "<group>"; };
 		D8034E8D1E860532000A817F /* AotuSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AotuSearchView.h; sourceTree = "<group>"; };
@@ -321,8 +322,7 @@
 		D8E71BCA1E7693A200D3300E /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		D8E71BCB1E7693A200D3300E /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
 		D8E71BCD1E7693A200D3300E /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		D8E71BDC1E76983D00D3300E /* CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunction.h; sourceTree = "<group>"; };
-		D8E71BDD1E76983D00D3300E /* CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunction.m; sourceTree = "<group>"; };
+		D8E71BDD1E76983D00D3300E /* CommonFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunc.m; sourceTree = "<group>"; };
 		D8EC86CF1E950DE600402C8A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D8EC86D11E9511F200402C8A /* APPUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPUpdateManager.h; sourceTree = "<group>"; };
 		D8EC86D21E9511F200402C8A /* APPUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPUpdateManager.m; sourceTree = "<group>"; };
@@ -565,8 +565,8 @@
 				D8BB8C421E83BF600087EE69 /* AutoBindViewController.xib */,
 				D88F10C81E6FCC5C00CDF34D /* Main.storyboard */,
 				D8E71BA91E767B4E00D3300E /* PrefixHeader.pch */,
-				D8E71BDC1E76983D00D3300E /* CommonFunction.h */,
-				D8E71BDD1E76983D00D3300E /* CommonFunction.m */,
+				7FCC70041ED28D82005FE971 /* CommonFunc.h */,
+				D8E71BDD1E76983D00D3300E /* CommonFunc.m */,
 				D81F277B1E7A3C6500075891 /* SystemSettingViewController.h */,
 				D81F277C1E7A3C6500075891 /* SystemSettingViewController.m */,
 				D81F277D1E7A3C6500075891 /* SystemSettingViewController.xib */,
@@ -1077,7 +1077,7 @@
 				D8E71BD81E7693A200D3300E /* IQTitleBarButtonItem.m in Sources */,
 				D81B20741E8CD1D900259550 /* AnimatedGIFImageSerialization.m in Sources */,
 				D88F10C71E6FCC5C00CDF34D /* ViewController.m in Sources */,
-				D8E71BDE1E76983D00D3300E /* CommonFunction.m in Sources */,
+				D8E71BDE1E76983D00D3300E /* CommonFunc.m in Sources */,
 				D8BB8C3E1E83BF4F0087EE69 /* MainBindViewController.m in Sources */,
 				D8E71BD21E7693A200D3300E /* IQUIViewController+Additions.m in Sources */,
 				D8E71BA81E767AD800D3300E /* BindDeviceView.m in Sources */,
@@ -1324,7 +1324,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarCare/FLAnimatedImage",
 				);
-				GCC_PREFIX_HEADER = /Users/TCL/Desktop/CarCare/CarCare/CarCare/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/TCL/Desktop/未命名文件夹/ChaoYue-BLE-TMPS/CarCare/CarCare/PrefixHeader.pch";
 				INFOPLIST_FILE = CarCare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1350,7 +1350,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarCare/FLAnimatedImage",
 				);
-				GCC_PREFIX_HEADER = /Users/TCL/Desktop/CarCare/CarCare/CarCare/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/TCL/Desktop/未命名文件夹/ChaoYue-BLE-TMPS/CarCare/CarCare/PrefixHeader.pch";
 				INFOPLIST_FILE = CarCare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

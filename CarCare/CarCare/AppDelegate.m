@@ -59,7 +59,7 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 
     
-    if (![CommonFunction hasSetSetting]) {
+    if (![CommonFunc hasSetSetting]) {
         NSString *yalidanwei = @"Bar";
         NSString *wendudanwei = @"°C";
         CGFloat defaultYaliShang = 3.0;
@@ -67,17 +67,17 @@
         CGFloat defaultWenduShang = 65;
         CGFloat defaultDianliang = 20;
         
-        [CommonFunction setisZhenDong:NO];
-        [CommonFunction setyalidanwei:yalidanwei];
-        [CommonFunction setwendudanwei:wendudanwei];
-        [CommonFunction setdefaultYaliShang:defaultYaliShang];
-        [CommonFunction setdefaultYaliXia:defaultYaliXia];
-        [CommonFunction setdefaultWenduShang:defaultWenduShang];
-        [CommonFunction setdefaultdianliangXia:defaultDianliang];
-        [CommonFunction setisPlayVioce:YES];
+        [CommonFunc setisZhenDong:NO];
+        [CommonFunc setyalidanwei:yalidanwei];
+        [CommonFunc setwendudanwei:wendudanwei];
+        [CommonFunc setdefaultYaliShang:defaultYaliShang];
+        [CommonFunc setdefaultYaliXia:defaultYaliXia];
+        [CommonFunc setdefaultWenduShang:defaultWenduShang];
+        [CommonFunc setdefaultdianliangXia:defaultDianliang];
+        [CommonFunc setisPlayVioce:YES];
         
         
-        [CommonFunction setHasSetSetting];
+        [CommonFunc setHasSetSetting];
     }
 
     NSSetUncaughtExceptionHandler (&UncaughtExceptionHandler);

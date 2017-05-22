@@ -133,7 +133,7 @@
         
         NSData *data = [dic objectForKey:@"kCBAdvDataManufacturerData"];
         NSLog(@"服务是%@",peripheral.services);
-        NSString *str = [CommonFunction convertDataToHexStr:data];
+        NSString *str = [CommonFunc convertDataToHexStr:data];
         
         NSLog(@"自动扫描%@",str);
         NSLog(@"lenght%ld",(unsigned long)str.length);
@@ -151,7 +151,7 @@
             switch (self.index) {
                 case 1:
                     if ([indexStr isEqualToString:@"80"]) {
-                        [CommonFunction setWheahlmacstring:macStr];
+                        [CommonFunc setWheahlmacstring:macStr];
                         [[NSNotificationCenter defaultCenter]postNotificationName:@"findNewDevice" object:nil];
                         [self removeFromSuperview];
                         [self.centralmanager stopScan];
@@ -159,7 +159,7 @@
                     break;
                 case 2:
                     if ([indexStr isEqualToString:@"81"]) {
-                        [CommonFunction setWheah2macstring:macStr];
+                        [CommonFunc setWheah2macstring:macStr];
                         [[NSNotificationCenter defaultCenter]postNotificationName:@"findNewDevice" object:nil];
                         [self removeFromSuperview];
                         [self.centralmanager stopScan];
@@ -168,7 +168,7 @@
                     break;
                 case 3:
                     if ([indexStr isEqualToString:@"82"]) {
-                        [CommonFunction setWheah3macstring:macStr];
+                        [CommonFunc setWheah3macstring:macStr];
                         [[NSNotificationCenter defaultCenter]postNotificationName:@"findNewDevice" object:nil];
                         [self removeFromSuperview];
                         [self.centralmanager stopScan];
@@ -179,7 +179,7 @@
                 case 4:
                     
                     if ([indexStr isEqualToString:@"83"]) {
-                        [CommonFunction setWheah4macstring:macStr];
+                        [CommonFunc setWheah4macstring:macStr];
                         [[NSNotificationCenter defaultCenter]postNotificationName:@"findNewDevice" object:nil];
                         [self removeFromSuperview];
                         [self.centralmanager stopScan];

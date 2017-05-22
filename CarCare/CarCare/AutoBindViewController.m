@@ -46,40 +46,40 @@
 
 
 - (void)reloadData{
-    if (![CommonFunction wheal1MacString]) {
+    if (![CommonFunc wheal1MacString]) {
         [self.bind1Btn setTitle:NSLocalizedString(@"IDS_PLEASE_BIND_DEVICE",@"请绑定设备")forState:UIControlStateNormal];
         [self.bind1Btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     }else{
-        [self.bind1Btn setTitle:[[CommonFunction wheal1MacString] substringFromIndex:6] forState:UIControlStateNormal];
+        [self.bind1Btn setTitle:[[CommonFunc wheal1MacString] substringFromIndex:6] forState:UIControlStateNormal];
         [self.bind1Btn setTitleColor:mainColor forState:UIControlStateNormal];
         
     }
     
-    if (![CommonFunction wheal2MacString]) {
+    if (![CommonFunc wheal2MacString]) {
         [self.bind2Btn setTitle:NSLocalizedString(@"IDS_PLEASE_BIND_DEVICE",@"请绑定设备") forState:UIControlStateNormal];
         [self.bind2Btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     }else{
-        [self.bind2Btn setTitle:[[CommonFunction wheal2MacString] substringFromIndex:6] forState:UIControlStateNormal];
+        [self.bind2Btn setTitle:[[CommonFunc wheal2MacString] substringFromIndex:6] forState:UIControlStateNormal];
         [self.bind2Btn setTitleColor:mainColor forState:UIControlStateNormal];
         
         
     }
     
-    if (![CommonFunction wheal3MacString]) {
+    if (![CommonFunc wheal3MacString]) {
         [self.bind3Btn setTitle:NSLocalizedString(@"IDS_PLEASE_BIND_DEVICE",@"请绑定设备") forState:UIControlStateNormal];
         [self.bind3Btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     }else{
-        [self.bind3Btn setTitle:[[CommonFunction wheal3MacString] substringFromIndex:6] forState:UIControlStateNormal];
+        [self.bind3Btn setTitle:[[CommonFunc wheal3MacString] substringFromIndex:6] forState:UIControlStateNormal];
         [self.bind3Btn setTitleColor:mainColor forState:UIControlStateNormal];
         
         
     }
     
-    if (![CommonFunction wheal4MacString]) {
+    if (![CommonFunc wheal4MacString]) {
         [self.bind4Btn setTitle:NSLocalizedString(@"IDS_PLEASE_BIND_DEVICE",@"请绑定设备") forState:UIControlStateNormal];
         [self.bind4Btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     }else{
-        [self.bind4Btn setTitle:[[CommonFunction wheal4MacString] substringFromIndex:6] forState:UIControlStateNormal];
+        [self.bind4Btn setTitle:[[CommonFunc wheal4MacString] substringFromIndex:6] forState:UIControlStateNormal];
         [self.bind1Btn setTitleColor:mainColor forState:UIControlStateNormal];
         
         

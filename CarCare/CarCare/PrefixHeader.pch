@@ -10,7 +10,7 @@
 #define PrefixHeader_pch
 
 #import "Masonry.h"
-#import "CommonFunction.h"
+#import "CommonFunc.h"
 
 #define BarToPsi 14.5
 #define PsiToKpa 6.9

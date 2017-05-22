@@ -187,12 +187,12 @@
 //测试播放声音
 - (void)playVoiceWithFileName:(NSString *)fileName{
     
-    if (![CommonFunction isPlayVioce]) {
+    if (![CommonFunc isPlayVioce]) {
         return;
     }
 
     
-    if ([CommonFunction isZhenDong]) {
+    if ([CommonFunc isZhenDong]) {
         NSNumber *openshark =  [[NSUserDefaults standardUserDefaults]objectForKey:@"openshark"];
         if (!openshark || [openshark boolValue] == 1) {
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
@@ -232,10 +232,10 @@
 
 - (void)updateView{
     
-    NSString *mac1 = [CommonFunction getWheahl1DataString];
-    NSString *mac2 = [CommonFunction getWheahl2DataString];
-    NSString *mac3 = [CommonFunction getWheahl3DataString];
-    NSString *mac4 = [CommonFunction getWheahl4DataString];
+    NSString *mac1 = [CommonFunc getWheahl1DataString];
+    NSString *mac2 = [CommonFunc getWheahl2DataString];
+    NSString *mac3 = [CommonFunc getWheahl3DataString];
+    NSString *mac4 = [CommonFunc getWheahl4DataString];
     
     if (mac1.length == 0) {
         self.unBinDBtn1.hidden = NO;
@@ -245,12 +245,12 @@
         self.unBinDBtn1.hidden = YES;
         self.wendu1.hidden = NO;
         self.taiya1.hidden = NO;
-//        if ([CommonFunction getWheahl1wendustring]) {
-//            self.wendu1.text = [CommonFunction getWheahl1wendustring];
+//        if ([CommonFunc getWheahl1wendustring]) {
+//            self.wendu1.text = [CommonFunc getWheahl1wendustring];
 //        }
 //        
-//        if ([CommonFunction getWheahl1yaliString]) {
-//            self.taiya1.text = [CommonFunction getWheahl1yaliString];
+//        if ([CommonFunc getWheahl1yaliString]) {
+//            self.taiya1.text = [CommonFunc getWheahl1yaliString];
 //        }
         
         [self updateDataWithDatastr:mac1 index:1];
@@ -273,13 +273,13 @@
 //        self.wendu2.text = @"--°C";
 //        self.taiya2.text = @"--bar";
         
-//        if ([CommonFunction getWheahl2wendustring]) {
-//            self.wendu2.text = [CommonFunction getWheahl2wendustring];
+//        if ([CommonFunc getWheahl2wendustring]) {
+//            self.wendu2.text = [CommonFunc getWheahl2wendustring];
 //        }
 //        
 //
-//        if ([CommonFunction getWheahl2yaliString]) {
-//            self.taiya2.text = [CommonFunction getWheahl2yaliString];
+//        if ([CommonFunc getWheahl2yaliString]) {
+//            self.taiya2.text = [CommonFunc getWheahl2yaliString];
 //        }
         
         [self updateDataWithDatastr:mac2 index:2];
@@ -295,12 +295,12 @@
         self.unBinDBtn3.hidden = YES;
         self.wendu3.hidden = NO;
         self.taiya3.hidden = NO;
-//        if ([CommonFunction getWheahl3wendustring]) {
-//            self.wendu3.text = [CommonFunction getWheahl3wendustring];
+//        if ([CommonFunc getWheahl3wendustring]) {
+//            self.wendu3.text = [CommonFunc getWheahl3wendustring];
 //        }
 //        
-//        if ([CommonFunction getWheahl3yaliString]) {
-//            self.taiya3.text = [CommonFunction getWheahl3yaliString];
+//        if ([CommonFunc getWheahl3yaliString]) {
+//            self.taiya3.text = [CommonFunc getWheahl3yaliString];
 //        }
         
         [self updateDataWithDatastr:mac3 index:3];
@@ -318,11 +318,11 @@
         self.unBinDBtn4.hidden = YES;
         self.wendu4.hidden = NO;
         self.taiya4.hidden = NO;
-//        if ([CommonFunction getWheahl4wendustring]) {
-//            self.wendu4.text = [CommonFunction getWheahl4wendustring];
+//        if ([CommonFunc getWheahl4wendustring]) {
+//            self.wendu4.text = [CommonFunc getWheahl4wendustring];
 //        }
-//        if ([CommonFunction getWheahl4yaliString]) {
-//            self.taiya4.text = [CommonFunction getWheahl4yaliString];
+//        if ([CommonFunc getWheahl4yaliString]) {
+//            self.taiya4.text = [CommonFunc getWheahl4yaliString];
 //        }
         
         [self updateDataWithDatastr:mac4 index:4];
@@ -375,7 +375,7 @@
 
 
     UIButton *trackBtn = [[UIButton alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 50, 0, 45, 43)];
-    if ([CommonFunction isPlayVioce]) {
+    if ([CommonFunc isPlayVioce]) {
         [trackBtn setImage:[UIImage imageNamed:@"音量-开"] forState:UIControlStateNormal];
     }else{
         [trackBtn setImage:[UIImage imageNamed:@"音量1-关"] forState:UIControlStateNormal];
@@ -986,12 +986,12 @@
 
 - (void)trackBtn_clicked:(UIButton *)btn{
 
-    if ([CommonFunction isPlayVioce]) {
-        [CommonFunction setisPlayVioce:NO];
+    if ([CommonFunc isPlayVioce]) {
+        [CommonFunc setisPlayVioce:NO];
         [btn setImage:[UIImage imageNamed:@"音量1-关"] forState:UIControlStateNormal];
 
     }else{
-        [CommonFunction setisPlayVioce:YES];
+        [CommonFunc setisPlayVioce:YES];
         [btn setImage:[UIImage imageNamed:@"音量-开"] forState:UIControlStateNormal];
     }
     
@@ -1059,14 +1059,14 @@
             
             NSString *macStr = [str substringWithRange:NSMakeRange(4, 12)];
 
-            if ( [self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunction wheal1MacString]]) {
+            if ( [self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunc wheal1MacString]]) {
                 
                 //            self.wendu1.text = wenduString;
                 //            self.taiya1.text = yaliString;
                 //            self.wendu1.hidden = NO;
                 //            self.taiya1.hidden = NO;
                 //            self.unBinDBtn1.hidden = YES;
-                //            [CommonFunction setWheahl1wendustring:wenduString yaliString:yaliString];
+                //            [CommonFunc setWheahl1wendustring:wenduString yaliString:yaliString];
                 //            [self updateDataWithyalifloat:yalifloat wenduinter:wenduinter dianliangInter:dianliangInter index:1];
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -1076,20 +1076,20 @@
                     
                 });
                 
-                [CommonFunction setWheahl1DataString:str];
+                [CommonFunc setWheahl1DataString:str];
                 [self updateDataWithDatastr:str index:1];
                 
                 
                 
                 
-            }else if([self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunction wheal2MacString]]){
+            }else if([self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunc wheal2MacString]]){
                 
                 //            self.wendu2.text = wenduString;
                 //            self.taiya2.text = yaliString;
                 //            self.wendu2.hidden = NO;
                 //            self.taiya2.hidden = NO;
                 //            self.unBinDBtn2.hidden = YES;
-                //            [CommonFunction setWheahl2wendustring:wenduString yaliString:yaliString];
+                //            [CommonFunc setWheahl2wendustring:wenduString yaliString:yaliString];
                 
                 //            [self updateDataWithyalifloat:yalifloat wenduinter:wenduinter dianliangInter:dianliangInter index:2];
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -1098,18 +1098,18 @@
                     [self performSelector:@selector(whealTimer2) withObject:nil afterDelay:60 * 10];
                     
                 });
-                [CommonFunction setWheahl2DataString:str];
+                [CommonFunc setWheahl2DataString:str];
                 [self updateDataWithDatastr:str index:2];
                 
                 
-            }else if([self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunction wheal3MacString]]){
+            }else if([self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunc wheal3MacString]]){
                 
                 //            self.wendu3.text = wenduString;
                 //            self.taiya3.text = yaliString;
                 //            self.wendu3.hidden = NO;
                 //            self.taiya3.hidden = NO;
                 //            self.unBinDBtn3.hidden = YES;
-                //            [CommonFunction setWheahl3wendustring:wenduString yaliString:yaliString];
+                //            [CommonFunc setWheahl3wendustring:wenduString yaliString:yaliString];
                 
                 //            [self updateDataWithyalifloat:yalifloat wenduinter:wenduinter dianliangInter:dianliangInter index:3];
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -1118,19 +1118,19 @@
                     [self performSelector:@selector(whealTimer3) withObject:nil afterDelay:60 * 10];
                     
                 });
-                [CommonFunction setWheahl3DataString:str];
+                [CommonFunc setWheahl3DataString:str];
                 [self updateDataWithDatastr:str index:3];
                 
                 
                 
-            }else if([self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunction wheal4MacString]]){
+            }else if([self isSameMacStr:[macStr uppercaseString] withMacString:[CommonFunc wheal4MacString]]){
                 
                 //            self.wendu4.text = wenduString;
                 //            self.taiya4.text = yaliString;
                 //            self.wendu4.hidden = NO;
                 //            self.taiya4.hidden = NO;
                 //            self.unBinDBtn4.hidden = YES;
-                //            [CommonFunction setWheahl4wendustring:wenduString yaliString:yaliString];
+                //            [CommonFunc setWheahl4wendustring:wenduString yaliString:yaliString];
                 
                 //            [self updateDataWithyalifloat:yalifloat wenduinter:wenduinter dianliangInter:dianliangInter index:4];
                 dispatch_sync(dispatch_get_main_queue(), ^{
@@ -1139,7 +1139,7 @@
                     [self performSelector:@selector(whealTimer4) withObject:nil afterDelay:60 * 10];
                     
                 });
-                [CommonFunction setWheahl4DataString:str];
+                [CommonFunc setWheahl4DataString:str];
                 [self updateDataWithDatastr:str index:4];
                 
                 
@@ -1161,7 +1161,7 @@
 
 
 - (void)whealTimer1{
-    if ([CommonFunction getWheahl1DataString]) {
+    if ([CommonFunc getWheahl1DataString]) {
         self.wendu1.text = @"--°C";
         self.taiya1.text = @"--bar";
     }
@@ -1169,7 +1169,7 @@
 
 
 - (void)whealTimer2{
-    if ([CommonFunction getWheahl2DataString]) {
+    if ([CommonFunc getWheahl2DataString]) {
         self.wendu2.text = @"--°C";
         self.taiya2.text = @"--bar";
     }
@@ -1177,14 +1177,14 @@
 
 
 - (void)whealTimer3{
-    if ([CommonFunction getWheahl3DataString]) {
+    if ([CommonFunc getWheahl3DataString]) {
         self.wendu3.text = @"--°C";
         self.taiya3.text = @"--bar";
     }
 }
 
 - (void)whealTimer4{
-    if ([CommonFunction getWheahl4DataString]) {
+    if ([CommonFunc getWheahl4DataString]) {
         self.wendu4.text = @"--°C";
         self.taiya4.text = @"--bar";
     }
@@ -1196,10 +1196,10 @@
     CGFloat yalifloat = [[self getValueofstr:yaliString] integerValue]* 0.00001;
     yaliString = [NSString stringWithFormat:@"%.1fbar",yalifloat];
     
-    if ([[CommonFunction yalidanwei] isEqualToString:@"Psi"])  {
+    if ([[CommonFunc yalidanwei] isEqualToString:@"Psi"])  {
         yalifloat = yalifloat  * BarToPsi;
         yaliString = [NSString stringWithFormat:@"%.1fPsi",yalifloat];
-    }else if([[CommonFunction yalidanwei] isEqualToString:@"Kpa"]){
+    }else if([[CommonFunc yalidanwei] isEqualToString:@"Kpa"]){
         yalifloat = yalifloat  * BarToKpa;
         yaliString = [NSString stringWithFormat:@"%.1fKpa",yalifloat ];
     }
@@ -1209,7 +1209,7 @@
     NSString *wenduString  =[dataStr substringWithRange:NSMakeRange(24, 8)];
     CGFloat wenduinter = [[self getValueofstr:wenduString] integerValue] * 0.01;
     wenduString = [NSString stringWithFormat:@"%.1f°C",wenduinter];
-    if ([[CommonFunction wendudanwei] isEqualToString:@"°F"]) {
+    if ([[CommonFunc wendudanwei] isEqualToString:@"°F"]) {
         wenduinter = wenduinter * 1.8 + 32;
         wenduString = [NSString stringWithFormat:@"%.1f°F",wenduinter];
     }
@@ -1309,7 +1309,7 @@
     BOOL isInTrouble = NO;
     
     //压力
-    if (yalifloat > [CommonFunction defaultYaliShang]) {
+    if (yalifloat > [CommonFunc defaultYaliShang]) {
         
         [self judgeHasContain:str];
         
@@ -1321,7 +1321,7 @@
         yaliLable.textColor = [UIColor orangeColor];
         NSLog(@"气压过高");
         
-    }else if (yalifloat < [CommonFunction defaultYaliXia]) {
+    }else if (yalifloat < [CommonFunc defaultYaliXia]) {
         
         NSString *yichangStr = [NSString stringWithFormat:@"%@轮胎气压过低",str];
         [self judgeHasContain:yichangStr];
@@ -1347,7 +1347,7 @@
     }
     
     //温度
-    if (wenduinter > [CommonFunction defaultWenduShang]) {
+    if (wenduinter > [CommonFunc defaultWenduShang]) {
     
         NSString *yichangStr = [NSString stringWithFormat:@"%@轮胎温度过高",str];
         [self judgeHasContain:yichangStr];
@@ -1368,7 +1368,7 @@
     }
     
     //电量
-    if (dianliangInter < [CommonFunction defaultdianliangXia]) {
+    if (dianliangInter < [CommonFunc defaultdianliangXia]) {
 //        [self.voiceArr addObject:[NSString stringWithFormat:@"%@轮胎电量过低",str]];
 //        [self reloadTimer];
         
@@ -1597,18 +1597,18 @@
     
     switch (view.tag) {
         case 1:
-            [CommonFunction setWheahlmacstring:[NSString stringWithFormat:@"800000%@",text]];
+            [CommonFunc setWheahlmacstring:[NSString stringWithFormat:@"800000%@",text]];
             break;
         case 2:
-            [CommonFunction setWheah2macstring:[NSString stringWithFormat:@"810000%@",text]];
+            [CommonFunc setWheah2macstring:[NSString stringWithFormat:@"810000%@",text]];
 
             break;
         case 3:
-            [CommonFunction setWheah3macstring:[NSString stringWithFormat:@"820000%@",text]];
+            [CommonFunc setWheah3macstring:[NSString stringWithFormat:@"820000%@",text]];
 
             break;
         case 4:
-            [CommonFunction setWheah4macstring:[NSString stringWithFormat:@"830000%@",text]];
+            [CommonFunc setWheah4macstring:[NSString stringWithFormat:@"830000%@",text]];
 
             break;
         default:
